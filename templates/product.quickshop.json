@@ -1,0 +1,58 @@
+{
+  "layout": "quickshop",
+  "sections": {
+    "main": {
+      "type": "quickshop",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "5066e7f4-3476-4f48-ab5e-f6d427e730e9": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_display": "hidden",
+            "inventory_transfer_notice": true
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "enable_local_pickup": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "price",
+        "5066e7f4-3476-4f48-ab5e-f6d427e730e9",
+        "form",
+        "description"
+      ],
+      "settings": {
+        "quickshop_gallery_aspect_ratio": "natural",
+        "quickshop_gallery_image_crop": true,
+        "quickshop_gallery_thumbnail_position": "below",
+        "quickshop_gallery_video_autoplay": true,
+        "quickshop_gallery_video_looping": true,
+        "quickshop_gallery_hover_zoom": "disabled"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

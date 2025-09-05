@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "1650289970f5ecbb6e": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "large",
+        "title": "Our Story",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 15,
+        "link": "",
+        "button_text": ""
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1650290093150c9e73": {
+      "type": "dynamic-rich-text",
+      "settings": {
+        "width": "wide",
+        "title": "",
+        "text": "",
+        "heading_size": "medium",
+        "text_alignment": "left"
+      }
+    },
+    "1650290191d17f5f24": {
+      "type": "dynamic-image-with-text",
+      "settings": {
+        "section_heading": "",
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "desktop_image_alignment": "left",
+        "mobile_image_alignment": "top",
+        "heading": "",
+        "subheading": "<p>Big thanks to <a href=\"https://www.uncommongoods.com/\" target=\"_blank\"><strong>UncommonGoods</strong></a> for allowing us to use their lovely images in this demo. Below is a little bit about them in their own words:</p><p><em>We know that there's a story behind every product. It's that of an emerging designer just introducing her work to the world; artisans working collaboratively in a low income country; or a seasoned artist crafting each of his pieces by hand. With your help, we're building a community of passionate people who love our products and connect with the stories behind them. We're growing not only our artist family, but also a strong following of customers who celebrate artists and delight in surrounding themselves with design.</em></p>",
+        "text_alignment": "left",
+        "button_label": "Button",
+        "button_link": ""
+      }
+    },
+    "1650290188c923cedb": {
+      "type": "dynamic-rich-text",
+      "settings": {
+        "width": "regular",
+        "title": "",
+        "text": "",
+        "heading_size": "medium",
+        "text_alignment": "left"
+      }
+    },
+    "1650290279649bae13": {
+      "type": "dynamic-menu-list",
+      "blocks": {
+        "1650290279cb5bb7c4-0": {
+          "type": "menu",
+          "settings": {
+            "menu": "kitchen-bar"
+          }
+        },
+        "1650290279cb5bb7c4-1": {
+          "type": "menu",
+          "settings": {
+            "menu": "bar"
+          }
+        },
+        "1650290279cb5bb7c4-2": {
+          "type": "menu",
+          "settings": {
+            "menu": "garden-outdoor"
+          }
+        },
+        "1650290279cb5bb7c4-3": {
+          "type": "menu",
+          "settings": {
+            "menu": "home-goods"
+          }
+        },
+        "1650290279cb5bb7c4-4": {
+          "type": "menu",
+          "settings": {
+            "menu": "kids"
+          }
+        },
+        "1650290279cb5bb7c4-5": {
+          "type": "menu",
+          "settings": {
+            "menu": "quick-links"
+          }
+        }
+      },
+      "block_order": [
+        "1650290279cb5bb7c4-0",
+        "1650290279cb5bb7c4-1",
+        "1650290279cb5bb7c4-2",
+        "1650290279cb5bb7c4-3",
+        "1650290279cb5bb7c4-4",
+        "1650290279cb5bb7c4-5"
+      ],
+      "settings": {
+        "title": "Explore our Shop"
+      }
+    },
+    "16502900954e7cfb01": {
+      "type": "dynamic-blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "blog": "blog-2",
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": true
+      }
+    }
+  },
+  "order": [
+    "1650289970f5ecbb6e",
+    "main",
+    "1650290093150c9e73",
+    "1650290191d17f5f24",
+    "1650290188c923cedb",
+    "1650290279649bae13",
+    "16502900954e7cfb01"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-blog",
+      "settings": {
+        "show_rss_link": true,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": true,
+        "featured_post": "blog-2/kitchen-organization-that-will-fire-up-your-everyday-cooking-game",
+        "posts_per_page_range": 9
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

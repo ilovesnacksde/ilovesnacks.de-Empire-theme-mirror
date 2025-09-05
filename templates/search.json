@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-search",
+      "blocks": {
+        "fca2f672-9254-457e-ac83-f8d8fd341f8c": {
+          "type": "filter",
+          "settings": {
+            "filter_groups": "expand_all",
+            "show_filter_product_count": true
+          }
+        }
+      },
+      "block_order": [
+        "fca2f672-9254-457e-ac83-f8d8fd341f8c"
+      ],
+      "settings": {
+        "results_per_page_range": 24,
+        "products_per_row": "4"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
