@@ -1,21 +1,11 @@
-name: Mirror to public
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  mirror:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Push to public mirror
-        env:
-          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
-        run: |
-          git config user.name "Mirror Bot"
-          git config user.email "mirror@users.noreply.github.com"
-          git remote add mirror https://${MIRROR_TOKEN}@github.com/ilovesnacksde/ilovesnacks.de-Empire-theme-mirror.git
-          git push --force mirror main:main
+- name: Push to public mirror
+  env:
+    MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+  run: |
+    set -e
+    if [ -z "$MIRROR_TOKEN" ]; then echo "MIRROR_TOKEN is empty"; exit 1; fi
+    git config user.name "Mirror Bot"
+    git config user.email "mirror@users.noreply.github.com"
+    git remote remove mirror || true
+    git remote add mirror https://${MIRROR_TOKEN}@github.com/ilovesnacksde/ilovesnacks.de-Empire-theme-mirror.git
+    git push --force mirror main:main
