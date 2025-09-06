@@ -331,21 +331,28 @@
   <a class="productitem--image-link"
      href="{{ product.url | within: collection }}"
      tabindex="-1" data-product-page-link>
-    <figure class="productitem--image" data-product-item-image>
-      {%- assign img = product.featured_media | default: product.featured_image -%}
-      {%- if img -%}
-        {{ img
-          | image_url: width: 736
-          | image_tag:
-              loading: 'lazy',
-              class: 'productitem--image-primary',
-              alt: product.title }}
-      {%- else -%}
-        {{ 'image' | placeholder_svg_tag: 'placeholder--image' }}
-      {%- endif -%}
+<figure
+  class="productitem--image"
+  data-product-item-image
+  {%- if initial_image and initial_image.aspect_ratio -%}
+    style="--product-grid-item-image-aspect-ratio: {{ initial_image.aspect_ratio }};"
+  {%- endif -%}
+>
+  {%- if initial_image -%}
+    {{ initial_image
+      | image_url: width: 736
+      | image_tag:
+          loading: 'lazy',
+          class: 'productitem--image-primary',
+          sizes: '(max-width: 749px) 50vw, 25vw',
+          alt: product.title }}
+  {%- else -%}
+    {{ 'image' | placeholder_svg_tag: 'placeholder--image' }}
+  {%- endif -%}
 
-      <span class="visually-hidden">{{ product.title }}</span>
-    </figure>
+  <span class="visually-hidden">{{ product.title }}</span>
+</figure>
+
   </a>
 </div>
 
