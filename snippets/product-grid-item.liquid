@@ -354,22 +354,37 @@
 
 
 
-{%- capture product_item_price -%}
-  <div class="card-price" style="text-align:center;margin-top:6px;">
-    {%- if product.compare_at_price_min > product.price_min -%}
-      <span class="price-old" style="color:#5D5D5D; position:relative; display:inline-block; margin-right:5px;">
-        <span style="white-space:nowrap;">{{- product.compare_at_price_min | money -}}</span>
-        <span aria-hidden="true" style="position:absolute; left:0; right:0; top:50%; height:1px; background:currentColor; transform:translateY(-50%); display:block;"></span>
-      </span>
-    {%- endif -%}
-
-    <span class="price-new" style="color:#C60404;font-weight:700;font-size:15px;white-space:nowrap;">
-      {%- if product.price_varies -%}
-        <span class="price-prefix" style="margin-right:4px;">ab</span>
+<div class="productitem__image-container">
+  <a
+    class="productitem--image-link"
+    href="{{ product.url | within: collection }}"
+    tabindex="-1"
+    data-product-page-link
+  >
+    {%- assign img = product.featured_media | default: product.featured_image -%}
+    <figure
+      class="productitem--image"
+      data-product-item-image
+      {%- if img and img.aspect_ratio -%}
+        style="--product-grid-item-image-aspect-ratio: {{ img.aspect_ratio }};"
       {%- endif -%}
-      {{ product.price_min | money }}
-    </span>
-  </div>
+    >
+      {%- if img -%}
+        {{ img
+          | image_url: width: 736
+          | image_tag:
+              loading: 'lazy',
+              class: 'productitem--image-primary',
+              alt: product.title }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder--image' }}
+      {%- endif -%}
+
+      <span class="visually-hidden">{{ product.title }}</span>
+    </figure>
+  </a>
+</div>
+
 {%- endcapture -%}
 
 
