@@ -7,5 +7,5 @@
     git config user.name "Mirror Bot"
     git config user.email "mirror@users.noreply.github.com"
     git remote remove mirror || true
-    git remote add mirror https://${MIRROR_TOKEN}@github.com/ilovesnacksde/ilovesnacks.de-Empire-theme-mirror.git
+    git remote add mirror https://${MIRROR_TOKEN}@github.com/ilovesnacksde/ilovesnacks-theme-mirror.git
     git push --force mirror main:main
