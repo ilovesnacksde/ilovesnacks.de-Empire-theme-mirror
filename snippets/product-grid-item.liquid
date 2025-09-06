@@ -330,68 +330,21 @@
 <div class="productitem__image-container">
   <a class="productitem--image-link"
      href="{{ product.url | within: collection }}"
-     tabindex="-1"
-     data-product-page-link>
-    <figure class="productitem--image" data-product-item-image style="position:relative;">
-      {% if initial_image %}
-        <!-- render plain <img> to avoid theme lazy/canvas quirks -->
-        <img
-          src="{{ initial_image | img_url: '720x' }}"
-          alt="{{ product_title | escape }}"
-          loading="lazy"
-          class="productitem--image-primary"
-          style="width:100%;height:auto !important;display:block;"
-        />
-        {% if product_grid_show_second_image and product.media.size > 1 %}
-          {% assign second_image = product.media[1].preview_image.src %}
-          <img
-            src="{{ second_image | img_url: '720x' }}"
-            alt=""
-            loading="lazy"
-            class="productitem--image-alternate"
-            style="display:none"
-          />
-        {% endif %}
-      {% else %}
+     tabindex="-1" data-product-page-link>
+    <figure class="productitem--image" data-product-item-image>
+      {%- assign img = product.featured_media | default: product.featured_image -%}
+      {%- if img -%}
+        {{ img
+          | image_url: width: 736
+          | image_tag:
+              loading: 'lazy',
+              class: 'productitem--image-primary',
+              alt: product.title }}
+      {%- else -%}
         {{ 'image' | placeholder_svg_tag: 'placeholder--image' }}
-      {% endif %}
+      {%- endif -%}
 
-      <!-- sale badge: pick the largest % off among available variants (and also from the cheapest available) -->
-      {% assign cheapest_variant = nil %}
-      {% for vv in product.variants %}
-        {% if vv.available and vv.price and vv.price > 0 %}
-          {% if cheapest_variant == nil or vv.price < cheapest_variant.price %}
-            {% assign cheapest_variant = vv %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% assign pct_from_cheapest = 0 %}
-      {% if cheapest_variant and cheapest_variant.compare_at_price and cheapest_variant.compare_at_price > cheapest_variant.price %}
-        {% assign dch = cheapest_variant.compare_at_price | minus: cheapest_variant.price %}
-        {% assign pct_from_cheapest = dch | times: 100 | divided_by: cheapest_variant.compare_at_price %}
-      {% endif %}
-
-      {% assign max_pct = 0 %}
-      {% for vv in product.variants %}
-        {% if vv.available and vv.compare_at_price and vv.compare_at_price > vv.price and vv.price > 0 %}
-          {% assign dd = vv.compare_at_price | minus: vv.price %}
-          {% assign pp = dd | times: 100 | divided_by: vv.compare_at_price %}
-          {% if pp > max_pct %}{% assign max_pct = pp %}{% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% assign display_pct = max_pct %}
-      {% if pct_from_cheapest > display_pct %}{% assign display_pct = pct_from_cheapest %}{% endif %}
-
-      {% if display_pct >= 1 and display_pct <= 85 %}
-        <span class="badge-sale-hero"
-              style="position:absolute;left:6px;top:6px;z-index:3;background:#C60404;color:#fff;border-radius:3px;font-weight:800;font-size:12px;line-height:1;padding:6px 8px;">
-          -{{ display_pct | round }}%
-        </span>
-      {% endif %}
-
-      <span class="visually-hidden">{{ product_title }}</span>
+      <span class="visually-hidden">{{ product.title }}</span>
     </figure>
   </a>
 </div>
