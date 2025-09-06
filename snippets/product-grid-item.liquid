@@ -82,6 +82,20 @@
   {% assign consistent_saved = true %}
 {% endif %}
 
+{%- comment -%} Build price block (handles sale and from-price) {%- endcomment -%}
+{%- capture product_item_price -%}
+  {%- render 'product-price',
+    product: product,
+    price: price,
+    price_varies: price_varies,
+    compare_at_price: compare_at_price,
+    compare_at_price_varies: compare_at_price_varies,
+    on_sale: on_sale,
+    show_saved: consistent_saved,
+    include_range: true
+  -%}
+{%- endcapture -%}
+
 {%- capture classes -%}
   productgrid--item
   imagestyle--{% if settings.product_grid_image_crop and settings.product_grid_image_style != 'natural' %}cropped-{% endif %}{{ settings.product_grid_image_style }}
@@ -98,7 +112,6 @@
 {%- assign initial_image = product.featured_media | default: product.featured_image -%}
 
 {%- if settings.swatches_enable and recently_viewed != true -%}
-  {% comment %} Check if product should show swatches {% endcomment %}
   {%- for option in product.options_with_values -%}
     {%- assign swatch_trigger = settings.swatches_swatch_trigger | strip | downcase -%}
     {%- assign option_name = option.name | downcase -%}
@@ -112,7 +125,6 @@
   {%- endfor -%}
 
   {% if section.settings.filter_style == 'groups' and current_tags and show_swatches %}
-    {% comment %} Filter by swatch tag if active {% endcomment %}
     {% for tag in current_tags %}
       {% assign tag_group = tag | split: '_' | first | downcase %}
       {% if tag_group == swatch_trigger %}
@@ -225,7 +237,6 @@
   {% endif %}
 >
   <div class="productitem" data-product-item-content>
-    {% comment %} Compare availability helpers {% endcomment %}
     {% assign template_allows_compare = settings.enable_product_compare %}
     {% if template.name == 'cart' %}
       {% assign template_allows_compare = false %}
@@ -291,7 +302,7 @@
       {% endunless %}
     {% endif %}
 
-    {%- comment -%} IMAGE BLOCK (single, stable) {%- endcomment -%}
+    <!-- IMAGE BLOCK -->
     <div class="productitem__image-container">
       <a
         class="productitem--image-link"
@@ -527,3 +538,19 @@
     }
   </script>
 {% endif %}
+
+<style>
+  /* remove card chrome */
+  .productgrid--item,
+  .productitem { border:0 !important; box-shadow:none !important; }
+
+  /* image flush to edges */
+  .productitem__image-container,
+  .productitem--image-link,
+  .productitem--image { margin:0 !important; padding:0 !important; border:0 !important; }
+  .productitem--image img { display:block !important; width:100% !important; height:auto !important; object-fit:cover; }
+
+  /* align cards: image on top, info sticks to bottom */
+  .productitem { display:flex; flex-direction:column; }
+  .productitem--info { margin-top:auto; }
+</style>
