@@ -360,11 +360,6 @@
 
 
 
-{%- assign initial_image = product.featured_media.preview_image | default: product.featured_image -%}
-{%- assign product_grid_show_second_image = product_grid_show_second_image | default: true -%}
-{%- assign performance_lazyload = performance_lazyload | default: true -%}
-
-
 <div class="productitem__image-container">
   <a
     class="productitem--image-link"
@@ -395,6 +390,11 @@
     </figure>
   </a>
 </div>
+
+
+
+
+
 
 {%- endcapture -%}
 
