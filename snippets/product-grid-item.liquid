@@ -302,10 +302,18 @@
       {% endunless %}
     {% endif %}
 
-    <!-- IMAGE BLOCK -->
-    <div style="padding:5px;">
-      <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}" style="width:100%; height:auto; display:block; border:none; margin:0; padding:0;" />
-    </div>
+
+
+<!-- IMAGE BLOCK -->
+<div style="padding:5px;">
+  <img 
+    src="{{ product.featured_image | image_url: width: 1200 }}" 
+    alt="{{ product.title | escape }}" 
+    style="display:block; width:100%; max-width:100%; height:auto; margin:0; padding:0; border:none;" 
+  />
+</div>
+
+
 
     <div class="productitem--info">
       <h2 class="productitem--title" style="font-family:'Tahoma', Arial, sans-serif; font-size:15px; font-weight:400; line-height:1.3; color:#444444; text-align:center;">
