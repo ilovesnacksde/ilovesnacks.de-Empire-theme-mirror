@@ -304,23 +304,19 @@
 
 
 
-<div class="grid__item" 
-     style="box-sizing:border-box; width:50%; padding:5px; display:inline-block; vertical-align:top;">
+<!-- Image -->
+<div style="padding:5px;">
+  {% assign img = product.featured_image | default: product.images.first %}
+  {% if img %}
+    <img
+      src="{{ img | image_url: width: 800 }}"
+      alt="{{ product.title | escape }}"
+      loading="lazy"
+      style="display:block; width:100% !important; max-width:100% !important; height:auto !important; margin:0; padding:0; border:0; object-fit:contain; aspect-ratio:auto !important;"
+    >
+  {% endif %}
+</div>
 
-  <!-- Product image -->
-  <div>
-    <img 
-      src="{{ product.featured_image | image_url: width: 400 }}" 
-      alt="{{ product.title | escape }}" 
-      style="width:100%; height:auto; display:block; border:none; margin:0; padding:0;" 
-    />
-  </div>
-
-<style>
-@media (min-width: 1024px) {
-  .grid__item { width:25% !important; }
-}
-</style>
 
 
 
