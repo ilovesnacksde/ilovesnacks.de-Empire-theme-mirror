@@ -335,7 +335,7 @@
     </div>
 
     <div class="productitem--info">
-      <h2 class="productitem--title" style="font-family:'Tahoma', Arial, sans-serif; font-size:15px; font-weight:400; line-height:1.1; color:#333333; text-align:center;">
+      <h2 class="productitem--title" style="font-family:'Tahoma', Arial, sans-serif; font-size:15px; font-weight:400; line-height:1.2; color:#333333; text-align:center;">
         <a href="{{ product_link }}" data-product-page-link style="color:#333333;">
           {{ product_title }}
         </a>
@@ -350,7 +350,7 @@
         <div class="product-sku" style="font-family:'Tahoma', Arial, sans-serif; font-size:12px; font-weight:400; line-height:1; color:#9D9D9D; text-align:center; margin-top:4px;">SKU: {{ vsku }}</div>
       {%- endif -%}
 
-      <div class="product-price" style="font-family:'Tahoma', Arial, sans-serif; font-size:14px; font-weight:400; line-height:1; color:#222222; text-align:center; margin-top:4px;">ab {{ product.price_min | money }}</div>
+      <div class="product-price" style="font-family:'Tahoma', Arial, sans-serif; font-size:14px; font-weight:400; line-height:1; color:#333333; text-align:center; margin-top:4px;">ab {{ product.price_min | money }}</div>
       </div>
 
       {% unless recently_viewed or countdown_timer %}
