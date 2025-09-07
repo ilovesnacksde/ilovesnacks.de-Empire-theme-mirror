@@ -316,30 +316,6 @@
     />
   </div>
 
-  <!-- Product title -->
-  <div style="font-family:'Tahoma', Arial, sans-serif; font-size:16px; font-weight:400; line-height:1.3; color:#111111; text-align:center; margin-top:4px;">
-    {{ product.title }}
-  </div>
-
-  <!-- SKU -->
-  {% assign first_sku = product.selected_or_first_available_variant.sku | default: product.variants.first.sku %}
-  {% if first_sku != blank %}
-    <div style="font-family:'Tahoma', Arial, sans-serif; font-size:14px; font-weight:400; line-height:1.3; color:#9AA3AF; text-align:center; margin-top:4px;">
-      SKU: {{ first_sku }}
-    </div>
-  {% endif %}
-
-  <!-- Price -->
-  <div style="font-family:'Tahoma', Arial, sans-serif; font-size:14px; font-weight:400; line-height:1.3; color:#111111; text-align:center; margin-top:4px;">
-    ab {{ product.price_min | money }}
-  </div>
-
-  <!-- Add to Cart button -->
-  <div style="text-align:center; margin-top:8px;">
-    <button type="submit" class="btn add-to-cart">Add to Cart</button>
-  </div>
-</div>
-
 <style>
 @media (min-width: 1024px) {
   .grid__item { width:25% !important; }
