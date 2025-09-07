@@ -303,6 +303,7 @@
     {% endif %}
 
 
+<div class="ld-card" tyle="box-sizing:border-box; width:50%; padding:5px; display:inline-block; vertical-align:top;">
 
 <!-- Image -->
 <div style="padding:5px;">
@@ -467,4 +468,10 @@
   /* align cards: image on top, info sticks to bottom */
   .productitem { display:flex; flex-direction:column; }
   .productitem--info { margin-top:auto; }
+
+</div>
+<style>
+  @media (min-width: 1024px) {
+    .ld-card { width:25% !important; }
+  }
 </style>
