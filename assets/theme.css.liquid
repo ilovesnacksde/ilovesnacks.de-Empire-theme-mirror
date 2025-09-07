@@ -22414,3 +22414,21 @@ body:not(.user-is-tabbing) .rte .tabs .grouped-content-trigger {
 .age-gate__confirm_btn.mdc-ripple-surface::after {
   background-color: {{ settings.color_button_text }};
 }
+
+/* Product grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.product-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

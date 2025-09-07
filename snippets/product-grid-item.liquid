@@ -303,35 +303,8 @@
     {% endif %}
 
     <!-- IMAGE BLOCK -->
-    <div class="productitem__image-container">
-      <a
-        class="productitem--image-link"
-        href="{{ product.url | within: collection }}"
-        tabindex="-1"
-        data-product-page-link
-      >
-        <figure
-          class="productitem--image"
-          data-product-item-image
-          {%- if initial_image and initial_image.aspect_ratio -%}
-            style="--product-grid-item-image-aspect-ratio: {{ initial_image.aspect_ratio }};"
-          {%- endif -%}
-        >
-          {%- if initial_image -%}
-            {{ initial_image
-              | image_url: width: 736
-              | image_tag:
-                  loading: 'lazy',
-                  class: 'productitem--image-primary',
-                  sizes: '(max-width: 749px) 50vw, 25vw',
-                  alt: product.title }}
-          {%- else -%}
-            {{ 'image' | placeholder_svg_tag: 'placeholder--image' }}
-          {%- endif -%}
-
-          <span class="visually-hidden">{{ product.title }}</span>
-        </figure>
-      </a>
+    <div style="padding:5px;">
+      <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}" style="width:100%; height:auto; display:block; border:none; margin:0; padding:0;" />
     </div>
 
     <div class="productitem--info">
