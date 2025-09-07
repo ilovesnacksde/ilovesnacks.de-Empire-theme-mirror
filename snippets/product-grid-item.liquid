@@ -307,33 +307,34 @@
 
 
 {%- liquid
-  assign preview_image = product.featured_media.preview_image | default: product.featured_image | default: product.images.first
+  assign preview_image = product.featured_media.preview_image
+    | default: product.featured_image
+    | default: product.images.first
   assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
 -%}
 
-<style>
-  /* local fallback for image block (scoped by product id) */
-  .ld-img-{{ product.id }}{ position:relative; width:100%; }
-  .ld-img-{{ product.id }} img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
-  .ld-img-contain-{{ product.id }} img{ object-fit:contain; }
-  .ld-img-wrap-{{ product.id }}{ position:relative; width:100%; height:0; padding-bottom: calc(100% / {{ preview_image.aspect_ratio | default: 1.0 }}); }
-</style>
-
-<div class="grid-product__image-mask">
-  <div class="ld-img-wrap-{{ product.id }}">
-    <img
-      class="lazyload"
-      src="{{ preview_image | img_url: '540x' }}"
-      data-src="{{ img_url }}"
-      data-widths="[360,540,720,900,1080]"
-      data-aspectratio="{{ preview_image.aspect_ratio }}"
-      data-sizes="auto"
-      alt="{{ preview_image.alt | escape }}"
-    >
-    <noscript>
-      <img src="{{ preview_image | img_url: '540x' }}" alt="{{ preview_image.alt | escape }}">
-    </noscript>
-  </div>
+<div class="grid-product__image-mask" style="margin:0; padding:0; display:block; width:100%;">
+  {%- if preview_image -%}
+    <div style="position:relative; width:100%; height:0; padding-bottom: {{ 100 | divided_by: preview_image.aspect_ratio | default: 100 }}%;">
+      <img
+        class="lazyload"
+        src="{{ preview_image | img_url: '540x' }}"
+        data-src="{{ img_url }}"
+        data-widths="[360, 540, 720, 900, 1080]"
+        data-aspectratio="{{ preview_image.aspect_ratio }}"
+        data-sizes="auto"
+        alt="{{ preview_image.alt | default: product.title | escape }}"
+        style="position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:cover; border:0; margin:0; padding:0;"
+      >
+      <noscript>
+        <img
+          src="{{ preview_image | img_url: '720x' }}"
+          alt="{{ preview_image.alt | default: product.title | escape }}"
+          style="display:block; width:100%; height:auto; border:0;"
+        >
+      </noscript>
+    </div>
+  {%- endif -%}
 </div>
 
 
