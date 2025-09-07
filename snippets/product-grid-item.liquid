@@ -235,7 +235,14 @@
   {% if recently_viewed %}
     data-recently_viewed-card
   {% endif %}
+  style="box-sizing:border-box; width:50% !important; padding:5px; display:inline-block; vertical-align:top;"
 >
+<style>
+  @media (min-width:1024px){
+    .productgrid--item{ width:25% !important; }
+  }
+</style>
+
   <div class="productitem" data-product-item-content>
     {% assign template_allows_compare = settings.enable_product_compare %}
     {% if template.name == 'cart' %}
