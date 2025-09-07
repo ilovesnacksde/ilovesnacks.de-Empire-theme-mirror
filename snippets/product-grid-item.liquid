@@ -350,10 +350,10 @@
         {%- assign vsku = product.variants.first.sku -%}
       {%- endif -%}
       {%- if vsku != blank -%}
-        <div class="product-sku" style="text-align:center;color:#9AA3AF;">SKU: {{ vsku }}</div>
+        <div class="product-sku" style="text-align:center;color:#9D9D9D;">SKU: {{ vsku }}</div>
       {%- endif -%}
 
-      <div class="product-price" style="text-align:center;">AB {{ product.price_min | money_without_trailing_zeros }}</div>
+      <div class="product-price" style="text-align:center;">ab {{ product.price_min }}</div>
       </div>
 
       {% unless recently_viewed or countdown_timer %}
