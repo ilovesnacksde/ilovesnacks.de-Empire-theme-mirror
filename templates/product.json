@@ -24,6 +24,10 @@
           "type": "price",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_nRWiQM": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "12214949-0a99-47d0-875d-57cf008e67f8": {
           "type": "inventory_status",
           "settings": {
@@ -64,6 +68,7 @@
         "title",
         "2e128dd1-7dbd-45da-966d-745faa090a0f",
         "price",
+        "judge_me_reviews_preview_badge_nRWiQM",
         "12214949-0a99-47d0-875d-57cf008e67f8",
         "470d7baa-1f3c-49c2-b147-9e4d935fa956",
         "tabs_Vw3piU",
