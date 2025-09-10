@@ -47,70 +47,35 @@
         "slideshow_text_below_image": false
       }
     },
-    "dynamic_html_H3ynd7": {
-      "type": "dynamic-html",
-      "name": "t:sections.custom_html.presets.custom_html.name",
-      "settings": {
-        "title": "",
-        "custom_html": "<div class=\"klaviyo-form-UikZfz\"></div>"
-      }
-    },
-    "dynamic_highlights_banner_gr4VzX": {
-      "type": "dynamic-highlights-banner",
+    "dynamic_featured_collection": {
+      "type": "dynamic-featured-collection",
       "blocks": {
-        "highlight_be8dGD": {
-          "type": "highlight",
+        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5": {
+          "type": "title_card",
           "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €60:",
-            "text": "<p>Getrocknete <strong>Mango 125g</strong> gratis 👉</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        },
-        "highlight_pzAqmN": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €80:",
-            "text": "<p>Getrocknete <strong>Mango 250g</strong> gratis 👉</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        },
-        "highlight_WVVUEk": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €100:",
-            "text": "<p>Getrocknete <strong>Mango 500g</strong> gratis</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
+            "text_alignment": "center-center",
+            "pre_heading": "Seasonal Clearance Sale",
+            "heading": "Save up to 40%",
+            "text_color": "#ffffff",
+            "show_on_mobile": true,
+            "horizontal_size": "3",
+            "vertical_size": "2",
+            "enable_full_width_on_mobile": true,
+            "cta_label": "Shop Sale",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
           }
         }
       },
       "block_order": [
-        "highlight_be8dGD",
-        "highlight_pzAqmN",
-        "highlight_WVVUEk"
+        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5"
       ],
-      "custom_css": [],
-      "name": "t:sections.highlights_banner.presets.highlights_banner.name",
       "settings": {
-        "section_spacing": true,
-        "section_width": "full-width",
-        "icon_layout": "left",
-        "color": "#ffffff",
-        "icon_color": "#ffffff",
-        "background_color": "#c60404",
-        "mobile_layout": "slider"
-      }
-    },
-    "dynamic_featured_collection-2": {
-      "type": "dynamic-featured-collection",
-      "settings": {
-        "title": "Bestseller",
+        "title": "Top-Kollektionen",
         "layout": "slideshow",
         "mobile_layout": "slideshow",
         "collection": "",
-        "product_count": 25,
+        "product_count": 10,
         "cta_label": "",
         "cta_button_style": "primary"
       }
@@ -171,37 +136,72 @@
         "mobile_layout": "grid"
       }
     },
-    "dynamic_featured_collection": {
+    "dynamic_featured_collection-2": {
       "type": "dynamic-featured-collection",
+      "settings": {
+        "title": "Bestseller",
+        "layout": "slideshow",
+        "mobile_layout": "slideshow",
+        "collection": "",
+        "product_count": 25,
+        "cta_label": "",
+        "cta_button_style": "primary"
+      }
+    },
+    "dynamic_highlights_banner_gr4VzX": {
+      "type": "dynamic-highlights-banner",
       "blocks": {
-        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5": {
-          "type": "title_card",
+        "highlight_be8dGD": {
+          "type": "highlight",
           "settings": {
-            "text_alignment": "center-center",
-            "pre_heading": "Seasonal Clearance Sale",
-            "heading": "Save up to 40%",
-            "text_color": "#ffffff",
-            "show_on_mobile": true,
-            "horizontal_size": "3",
-            "vertical_size": "2",
-            "enable_full_width_on_mobile": true,
-            "cta_label": "Shop Sale",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €60:",
+            "text": "<p>Getrocknete <strong>Mango 125g</strong> gratis 👉</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        },
+        "highlight_pzAqmN": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €80:",
+            "text": "<p>Getrocknete <strong>Mango 250g</strong> gratis 👉</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        },
+        "highlight_WVVUEk": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €100:",
+            "text": "<p>Getrocknete <strong>Mango 500g</strong> gratis</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
           }
         }
       },
       "block_order": [
-        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5"
+        "highlight_be8dGD",
+        "highlight_pzAqmN",
+        "highlight_WVVUEk"
       ],
+      "custom_css": [],
+      "name": "t:sections.highlights_banner.presets.highlights_banner.name",
       "settings": {
-        "title": "Top-Kollektionen",
-        "layout": "slideshow",
-        "mobile_layout": "slideshow",
-        "collection": "",
-        "product_count": 10,
-        "cta_label": "",
-        "cta_button_style": "primary"
+        "section_spacing": true,
+        "section_width": "full-width",
+        "icon_layout": "left",
+        "color": "#ffffff",
+        "icon_color": "#ffffff",
+        "background_color": "#c60404",
+        "mobile_layout": "slider"
+      }
+    },
+    "dynamic_html_H3ynd7": {
+      "type": "dynamic-html",
+      "name": "t:sections.custom_html.presets.custom_html.name",
+      "settings": {
+        "title": "",
+        "custom_html": "<div class=\"klaviyo-form-UikZfz\"></div>"
       }
     },
     "dynamic_promo_mosaic": {
@@ -426,11 +426,11 @@
   },
   "order": [
     "dynamic_slideshow",
-    "dynamic_html_H3ynd7",
-    "dynamic_highlights_banner_gr4VzX",
-    "dynamic_featured_collection-2",
-    "dynamic_highlights_banner",
     "dynamic_featured_collection",
+    "dynamic_highlights_banner",
+    "dynamic_featured_collection-2",
+    "dynamic_highlights_banner_gr4VzX",
+    "dynamic_html_H3ynd7",
     "dynamic_promo_mosaic",
     "dynamic_featured_product",
     "dynamic_testimonials",
