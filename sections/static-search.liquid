@@ -45,6 +45,11 @@
   {% assign show_filter_trigger = true %}
 {% endif %}
 
+{%- comment -%} force no sidebar/filters in search {%- endcomment -%}
+{% assign show_sidebar = false %}
+{% assign show_filters = false %}
+{% assign show_filter_trigger = false %}
+
 {% assign paginate_by = section.settings.results_per_page_range %}
 
 {% paginate search.results by paginate_by %}
@@ -121,16 +126,8 @@
     results: results,
   %}
 
-  <div
-    class="
-      productgrid--outer
-      {% if show_sidebar and search.filters.size > 0 %}
-        layout--has-sidebar
-      {% else %}
-        layout--no-sidebar
-      {% endif %}
-    "
-  >
+<div class="productgrid--outer layout--no-sidebar">
+
     <div class="productgrid--wrapper">
 
       {% assign active_filters = false %}
@@ -148,7 +145,7 @@
           search_filter_string: search_filter_string,
           sanitized_terms: sanitized_terms,
         %}
-{%- comment -%}
+
         {% if active_filters == true %}
           <div class="productgrid--filters">
             {%-
@@ -157,7 +154,7 @@
             %}
           </div>
         {% endif %}
-{%- endcomment -%}
+
         {% if show_filter_trigger %}
           {% capture utility_class %}
             productgrid--utils
@@ -209,6 +206,7 @@
         {% endif %}
       </div>
 
+{%- comment -%}
       {% if show_sidebar and search.filters.size > 0 %}
         {%
           render 'product-grid-sidebar',
@@ -216,6 +214,7 @@
           context: search
         %}
       {% endif %}
+{%- endcomment -%}
 
       {% if product_count > 0 %}
         <h2 class="visually-hidden">{{ 'general.accessibility.search_products' | t }}</h2>
