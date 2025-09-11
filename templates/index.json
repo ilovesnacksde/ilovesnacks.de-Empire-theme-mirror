@@ -520,13 +520,6 @@
     "dynamic_faq_TiJaE7": {
       "type": "dynamic-faq",
       "blocks": {
-        "category_ypXEKq": {
-          "type": "category",
-          "settings": {
-            "heading": "Category",
-            "show_category_card": true
-          }
-        },
         "question_z3V6wX": {
           "type": "question",
           "settings": {
@@ -553,7 +546,6 @@
         }
       },
       "block_order": [
-        "category_ypXEKq",
         "question_z3V6wX",
         "question_X9XTbX",
         "question_bEhy7M"
