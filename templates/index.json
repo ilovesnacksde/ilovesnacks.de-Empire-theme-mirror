@@ -634,7 +634,7 @@
         "heading": "FAQ",
         "enable_category_cards": true,
         "category_card_image_crop": "square",
-        "category_heading_size": "large",
+        "category_heading_size": "medium",
         "icon_color": "rgba(0,0,0,0)"
       }
     }
