@@ -708,8 +708,8 @@
         "question_KDxtJp": {
           "type": "question",
           "settings": {
-            "question": "Frequently asked question",
-            "answer": "<p>Use this text to provide answers for your most commonly asked questions.</p>",
+            "question": "Gibt es andere Kontaktmöglichkeiten?",
+            "answer": "<p>Bitte schreiben Sie ausschließlich über WhatsApp.<br/>Anrufe, Sprachnachrichten und SMS werden nicht angenommen (sie werden automatisch blockiert).<br/>E-Mail - Support wird nicht angeboten - alle Anfragen bitte nur über WhatsApp</p>",
             "icon": "none"
           }
         }
