@@ -247,35 +247,35 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "test-2",
             "title": ""
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "test-3",
             "title": ""
           }
         },
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "test-4",
             "title": ""
           }
         },
         "collection-5": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "test-2",
             "title": "Over 25% Off"
           }
         },
         "collection-6": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "test-1",
             "title": "Explore More"
           }
         },
