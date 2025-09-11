@@ -689,6 +689,13 @@
             "answer": "<p>In der Regel nur einen. Falls das System mehrere Codes akzeptiert, können diese auch kombiniert werden.</p>",
             "icon": "none"
           }
+        },
+        "category_LFEPDF": {
+          "type": "category",
+          "settings": {
+            "heading": "Support",
+            "show_category_card": true
+          }
         }
       },
       "block_order": [
@@ -713,7 +720,8 @@
         "question_6QriHV",
         "category_hd3EKy",
         "question_Rgdpe4",
-        "question_VaXRf3"
+        "question_VaXRf3",
+        "category_LFEPDF"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
