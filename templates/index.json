@@ -516,6 +516,57 @@
       "settings": {
         "include_padding": true
       }
+    },
+    "dynamic_faq_TiJaE7": {
+      "type": "dynamic-faq",
+      "blocks": {
+        "category_ypXEKq": {
+          "type": "category",
+          "settings": {
+            "heading": "Category",
+            "show_category_card": true
+          }
+        },
+        "question_z3V6wX": {
+          "type": "question",
+          "settings": {
+            "question": "Frequently asked question",
+            "answer": "<p>Use this text to provide answers for your most commonly asked questions.</p>",
+            "icon": "none"
+          }
+        },
+        "question_X9XTbX": {
+          "type": "question",
+          "settings": {
+            "question": "Frequently asked question",
+            "answer": "<p>Use this text to provide answers for your most commonly asked questions.</p>",
+            "icon": "none"
+          }
+        },
+        "question_bEhy7M": {
+          "type": "question",
+          "settings": {
+            "question": "Frequently asked question",
+            "answer": "<p>Use this text to provide answers for your most commonly asked questions.</p>",
+            "icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "category_ypXEKq",
+        "question_z3V6wX",
+        "question_X9XTbX",
+        "question_bEhy7M"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "section_width": "wide",
+        "heading": "FAQ",
+        "enable_category_cards": false,
+        "category_card_image_crop": "original",
+        "category_heading_size": "medium",
+        "icon_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -529,6 +580,7 @@
     "dynamic_highlights_banner_gr4VzX",
     "dynamic_html_H3ynd7",
     "dynamic_promo_mosaic",
-    "175759381886a64c5c"
+    "175759381886a64c5c",
+    "dynamic_faq_TiJaE7"
   ]
 }
