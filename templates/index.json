@@ -666,6 +666,29 @@
             "answer": "<p>Jeder Bestellung liegt ein Lieferschein mit Markierungen und Anweisungen bei, auf dem genau beschrieben ist, was zu tun ist.</p>",
             "icon": "none"
           }
+        },
+        "category_hd3EKy": {
+          "type": "category",
+          "settings": {
+            "heading": "Geschenke & Gutscheincodes",
+            "show_category_card": true
+          }
+        },
+        "question_Rgdpe4": {
+          "type": "question",
+          "settings": {
+            "question": "Wie werden Geschenke bei Bestellungen angerechnet?",
+            "answer": "<p>Geschenke werden automatisch in den Warenkorb gelegt, sobald die jeweilige Bestellsumme erreicht ist.</p>",
+            "icon": "none"
+          }
+        },
+        "question_VaXRf3": {
+          "type": "question",
+          "settings": {
+            "question": "Kann ich mehrere Gutscheincodes gleichzeitig verwenden?",
+            "answer": "<p>In der Regel nur einen. Falls das System mehrere Codes akzeptiert, können diese auch kombiniert werden.</p>",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -687,7 +710,10 @@
         "question_QCJ97z",
         "category_ihPw6j",
         "question_niPb6k",
-        "question_6QriHV"
+        "question_6QriHV",
+        "category_hd3EKy",
+        "question_Rgdpe4",
+        "question_VaXRf3"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
