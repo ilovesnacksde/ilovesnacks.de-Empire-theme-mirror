@@ -547,7 +547,15 @@
           "type": "question",
           "settings": {
             "question": "Was kostet die Lieferung?",
-            "answer": "<p>- Bei Bestellungen bis €60: <strong>€6,99</strong><br/>- Ab €60: <strong>kostenlos</strong><br/><br/>Mehr Details zur Lieferung 👉<a href=\"https://ilovesnacks.de/pages/versand\" target=\"_blank\" title=\"https://ilovesnacks.de/pages/versand\">hier</a></p>",
+            "answer": "<p>- Bei Bestellungen bis €60: <strong>€6,99</strong><br/>- Ab €60: <strong>kostenlos</strong><br/><br/>Mehr Details zur Lieferung 👉 <a href=\"https://ilovesnacks.de/pages/versand\" target=\"_blank\" title=\"https://ilovesnacks.de/pages/versand\">hier</a></p>",
+            "icon": "none"
+          }
+        },
+        "question_dpNwDm": {
+          "type": "question",
+          "settings": {
+            "question": "Wie lange dauert die Lieferung?",
+            "answer": "<p>In der Regel 4-5 Tage.<br/>Mehr Details zur Lieferung 👉 <a href=\"https://ilovesnacks.de/pages/versand\" target=\"_blank\" title=\"https://ilovesnacks.de/pages/versand\">hier</a></p>",
             "icon": "none"
           }
         }
@@ -556,7 +564,8 @@
         "category_wtdEDA",
         "question_z3V6wX",
         "question_X9XTbX",
-        "question_bEhy7M"
+        "question_bEhy7M",
+        "question_dpNwDm"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
