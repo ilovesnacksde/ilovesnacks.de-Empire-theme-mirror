@@ -558,6 +558,13 @@
             "answer": "<p>In der Regel 4-5 Tage.<br/>Mehr Details zur Lieferung 👉 <a href=\"https://ilovesnacks.de/pages/versand\" target=\"_blank\" title=\"https://ilovesnacks.de/pages/versand\">hier</a></p>",
             "icon": "none"
           }
+        },
+        "category_t7FKq9": {
+          "type": "category",
+          "settings": {
+            "heading": "Bezahlung",
+            "show_category_card": true
+          }
         }
       },
       "block_order": [
@@ -565,7 +572,8 @@
         "question_z3V6wX",
         "question_X9XTbX",
         "question_bEhy7M",
-        "question_dpNwDm"
+        "question_dpNwDm",
+        "category_t7FKq9"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
