@@ -643,6 +643,29 @@
             "answer": "<p>Bitte beachten Sie die Hinweise auf der Produktseite.<br/>Grundsätzlich: kühl und trocken, ohne direkte Sonneneinstrahlung und in geschlossener Verpackung lagern.<br/>Eine Lagerung im Kühlschrank ist nicht erforderlich.<br/>Ausnahme: Oliven - geschlossene Gläser können ungekühlt gelagert werden, nach dem Öffnen jedoch nur im Kühlschrank.</p>",
             "icon": "none"
           }
+        },
+        "category_ihPw6j": {
+          "type": "category",
+          "settings": {
+            "heading": "Rückgaben und Probleme mit Bestellungen",
+            "show_category_card": true
+          }
+        },
+        "question_niPb6k": {
+          "type": "question",
+          "settings": {
+            "question": "Können Produkte zurückgegeben werden?",
+            "answer": "<p>Leider können Lebensmittel nicht zurückgegeben werden</p>",
+            "icon": "none"
+          }
+        },
+        "question_6QriHV": {
+          "type": "question",
+          "settings": {
+            "question": "Was tun, wenn Artikel fehlen?",
+            "answer": "<p>Jeder Bestellung liegt ein Lieferschein mit Markierungen und Anweisungen bei, auf dem genau beschrieben ist, was zu tun ist.</p>",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -661,7 +684,10 @@
         "category_8KpMbp",
         "question_33Rmqk",
         "question_A4BRaE",
-        "question_QCJ97z"
+        "question_QCJ97z",
+        "category_ihPw6j",
+        "question_niPb6k",
+        "question_6QriHV"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
