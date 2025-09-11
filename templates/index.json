@@ -565,6 +565,22 @@
             "heading": "Bezahlung",
             "show_category_card": true
           }
+        },
+        "question_zR3jVe": {
+          "type": "question",
+          "settings": {
+            "question": "Welche Zahlungsmethoden stehen zur Verfügung?",
+            "answer": "<p>PayPal, Klarna, Google Pay, Apple Pay sowie Kreditkarten (Visa, MasterCard, American Express)</p>",
+            "icon": "none"
+          }
+        },
+        "question_EqnhgW": {
+          "type": "question",
+          "settings": {
+            "question": "Ist die Bezahlung auf Ihrer Website sicher?",
+            "answer": "<p>Ja. Alle Zahlungen sind durch ein SSL-Zertifikat geschützt und werden über die Plattform Stripe abgewickelt.<br/>Wir sehen, speichern oder verarbeiten Ihre Kartendaten nicht - sie werden verschlüsselt und ausschließlich bei Stripe gespeichert.</p>",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -573,7 +589,9 @@
         "question_X9XTbX",
         "question_bEhy7M",
         "question_dpNwDm",
-        "category_t7FKq9"
+        "category_t7FKq9",
+        "question_zR3jVe",
+        "question_EqnhgW"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
