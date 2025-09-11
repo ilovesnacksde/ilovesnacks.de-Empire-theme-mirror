@@ -53,36 +53,42 @@
         "slide_MGAyWd": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/PayPal.png",
             "link": ""
           }
         },
         "slide_MVqRRL": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Klarna_Payment_Badge.png",
             "link": ""
           }
         },
         "slide_Ng8zUA": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Google_Pay.png",
             "link": ""
           }
         },
         "slide_fqDRaT": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/ApplePay.png",
             "link": ""
           }
         },
         "slide_J4xfrA": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/MASTERCARD.png",
             "link": ""
           }
         },
         "slide_yPbbCJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/VISA.png",
             "link": ""
           }
         }
@@ -102,24 +108,24 @@
         "heading_font": "montserrat_n4",
         "header_size": 24,
         "header_align": "center",
-        "scrolling_velocity": 10,
+        "scrolling_velocity": 20,
         "pause_hover": true,
         "shadow": false,
         "sliders_mt": 0,
-        "logo_padding_top": 0,
+        "logo_padding_top": 12,
         "logo_padding_bottom": 0,
         "slider_gap": 30,
-        "slider_gap_mobile": 30,
+        "slider_gap_mobile": 20,
         "slider_direction": "left",
-        "icon_width": 200,
+        "icon_width": 100,
         "header_color": "#1d1d1d",
         "border_color": "#ffffff",
         "background-color": "#ffffff",
         "slider-background-color": "#ffffff",
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 40,
+        "padding_bottom": 0,
         "full_width": true,
         "content_width": 120,
         "border_thickness": 0,
