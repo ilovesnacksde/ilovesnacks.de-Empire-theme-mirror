@@ -47,91 +47,6 @@
         "slideshow_text_below_image": false
       }
     },
-    "ss_scrolling_logo_cloud_HXarAm": {
-      "type": "ss-scrolling-logo-cloud",
-      "blocks": {
-        "slide_MGAyWd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/PayPal.png",
-            "link": ""
-          }
-        },
-        "slide_MVqRRL": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Klarna_Payment_Badge.png",
-            "link": ""
-          }
-        },
-        "slide_Ng8zUA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Google_Pay.png",
-            "link": ""
-          }
-        },
-        "slide_fqDRaT": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/ApplePay.png",
-            "link": ""
-          }
-        },
-        "slide_J4xfrA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/MASTERCARD.png",
-            "link": ""
-          }
-        },
-        "slide_yPbbCJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/VISA.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_MGAyWd",
-        "slide_MVqRRL",
-        "slide_Ng8zUA",
-        "slide_fqDRaT",
-        "slide_J4xfrA",
-        "slide_yPbbCJ"
-      ],
-      "name": "SS - Scrolling Logo Cloud",
-      "settings": {
-        "ss-title": "Zahlungspartner",
-        "heading_custom": false,
-        "heading_font": "montserrat_n4",
-        "header_size": 24,
-        "header_align": "center",
-        "scrolling_velocity": 20,
-        "pause_hover": true,
-        "shadow": false,
-        "sliders_mt": 0,
-        "logo_padding_top": 12,
-        "logo_padding_bottom": 0,
-        "slider_gap": 30,
-        "slider_gap_mobile": 20,
-        "slider_direction": "left",
-        "icon_width": 100,
-        "header_color": "#1d1d1d",
-        "border_color": "#ffffff",
-        "background-color": "#ffffff",
-        "slider-background-color": "#ffffff",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 40,
-        "padding_bottom": 0,
-        "full_width": true,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
     "dynamic_collection_list": {
       "type": "dynamic-collection-list",
       "blocks": {
@@ -244,16 +159,89 @@
         "cta_button_style": "secondary"
       }
     },
-    "dynamic_featured_collection-2": {
-      "type": "dynamic-featured-collection",
+    "ss_scrolling_logo_cloud_HXarAm": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_MGAyWd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/PayPal.png",
+            "link": ""
+          }
+        },
+        "slide_MVqRRL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Klarna_Payment_Badge.png",
+            "link": ""
+          }
+        },
+        "slide_Ng8zUA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Google_Pay.png",
+            "link": ""
+          }
+        },
+        "slide_fqDRaT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ApplePay.png",
+            "link": ""
+          }
+        },
+        "slide_J4xfrA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/MASTERCARD.png",
+            "link": ""
+          }
+        },
+        "slide_yPbbCJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/VISA.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_MGAyWd",
+        "slide_MVqRRL",
+        "slide_Ng8zUA",
+        "slide_fqDRaT",
+        "slide_J4xfrA",
+        "slide_yPbbCJ"
+      ],
+      "name": "SS - Scrolling Logo Cloud",
       "settings": {
-        "title": "Bestseller",
-        "layout": "slideshow",
-        "mobile_layout": "slideshow",
-        "collection": "",
-        "product_count": 25,
-        "cta_label": "",
-        "cta_button_style": "primary"
+        "ss-title": "Zahlungspartner",
+        "heading_custom": false,
+        "heading_font": "montserrat_n4",
+        "header_size": 24,
+        "header_align": "center",
+        "scrolling_velocity": 20,
+        "pause_hover": true,
+        "shadow": false,
+        "sliders_mt": 0,
+        "logo_padding_top": 12,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 20,
+        "slider_direction": "left",
+        "icon_width": 100,
+        "header_color": "#1d1d1d",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
       }
     },
     "dynamic_featured_collection": {
@@ -285,6 +273,87 @@
         "mobile_layout": "slideshow",
         "collection": "",
         "product_count": 10,
+        "cta_label": "",
+        "cta_button_style": "primary"
+      }
+    },
+    "ss_scrolling_logo_cloud_3jCnmc": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_m9M4hw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DPD.png",
+            "link": ""
+          }
+        },
+        "slide_cxNMPX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DPD.png",
+            "link": ""
+          }
+        },
+        "slide_Gd4ER6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DPD.png",
+            "link": ""
+          }
+        },
+        "slide_g8aP6g": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DPD.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_m9M4hw",
+        "slide_cxNMPX",
+        "slide_Gd4ER6",
+        "slide_g8aP6g"
+      ],
+      "name": "SS - Scrolling Logo Cloud",
+      "settings": {
+        "ss-title": "Lieferpartner",
+        "heading_custom": false,
+        "heading_font": "montserrat_n4",
+        "header_size": 24,
+        "header_align": "center",
+        "scrolling_velocity": 20,
+        "pause_hover": true,
+        "shadow": false,
+        "sliders_mt": 16,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "icon_width": 200,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "dynamic_featured_collection-2": {
+      "type": "dynamic-featured-collection",
+      "settings": {
+        "title": "Bestseller",
+        "layout": "slideshow",
+        "mobile_layout": "slideshow",
+        "collection": "",
+        "product_count": 25,
         "cta_label": "",
         "cta_button_style": "primary"
       }
@@ -451,10 +520,11 @@
   },
   "order": [
     "dynamic_slideshow",
-    "ss_scrolling_logo_cloud_HXarAm",
     "dynamic_collection_list",
-    "dynamic_featured_collection-2",
+    "ss_scrolling_logo_cloud_HXarAm",
     "dynamic_featured_collection",
+    "ss_scrolling_logo_cloud_3jCnmc",
+    "dynamic_featured_collection-2",
     "dynamic_highlights_banner",
     "dynamic_highlights_banner_gr4VzX",
     "dynamic_html_H3ynd7",
