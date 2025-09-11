@@ -290,21 +290,21 @@
         "slide_cxNMPX": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DPD.png",
+            "image": "shopify://shop_images/DHL_logo_54bbf107-b1c5-4d26-a22b-a8f226bf0a6a.png",
             "link": ""
           }
         },
         "slide_Gd4ER6": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DPD.png",
+            "image": "shopify://shop_images/UPS_logo.png",
             "link": ""
           }
         },
         "slide_g8aP6g": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/DPD.png",
+            "image": "shopify://shop_images/NOVAPOST_logo.png",
             "link": ""
           }
         }
