@@ -581,6 +581,37 @@
             "answer": "<p>Ja. Alle Zahlungen sind durch ein SSL-Zertifikat geschützt und werden über die Plattform Stripe abgewickelt.<br/>Wir sehen, speichern oder verarbeiten Ihre Kartendaten nicht - sie werden verschlüsselt und ausschließlich bei Stripe gespeichert.</p>",
             "icon": "none"
           }
+        },
+        "category_RjJpRg": {
+          "type": "category",
+          "settings": {
+            "heading": "Bestellungen",
+            "show_category_card": true
+          }
+        },
+        "question_gWU7hA": {
+          "type": "question",
+          "settings": {
+            "question": "Wie kann ich eine Bestellung aufgeben?",
+            "answer": "<p>Legen Sie die gewünschten Produkte in den Warenkorb, geben Sie die vollständige und korrekte Lieferadresse an und schließen Sie den Kauf mit einer Online-Zahlung ab.</p>",
+            "icon": "none"
+          }
+        },
+        "question_KqtdKF": {
+          "type": "question",
+          "settings": {
+            "question": "Muss ich ein Konto erstellen?",
+            "answer": "<p>Eine Registrierung ist nicht erforderlich: Sie können als Gast bestellen oder optional ein Kundenkonto anlegen.</p>",
+            "icon": "none"
+          }
+        },
+        "question_TyrpCk": {
+          "type": "question",
+          "settings": {
+            "question": "Kann ich eine Bestellung ändern oder stornieren?",
+            "answer": "<p>Bitte schreiben Sie uns so schnell wie möglich über <a href=\"https://wa.me/4915758340007\" target=\"_blank\" title=\"https://wa.me/4915758340007\">WhatsApp</a><br/>Wenn es noch möglich ist, helfen wir Ihnen gerne.<br/>Für solche Änderungen wird eine zusätzliche Gebühr gemäß Preisliste erhoben.</p>",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -591,7 +622,11 @@
         "question_dpNwDm",
         "category_t7FKq9",
         "question_zR3jVe",
-        "question_EqnhgW"
+        "question_EqnhgW",
+        "category_RjJpRg",
+        "question_gWU7hA",
+        "question_KqtdKF",
+        "question_TyrpCk"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
