@@ -47,6 +47,85 @@
         "slideshow_text_below_image": false
       }
     },
+    "ss_scrolling_logo_cloud_HXarAm": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_MGAyWd": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_MVqRRL": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_Ng8zUA": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_fqDRaT": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_J4xfrA": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_yPbbCJ": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_MGAyWd",
+        "slide_MVqRRL",
+        "slide_Ng8zUA",
+        "slide_fqDRaT",
+        "slide_J4xfrA",
+        "slide_yPbbCJ"
+      ],
+      "name": "SS - Scrolling Logo Cloud",
+      "settings": {
+        "ss-title": "Zahlungspartner",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 30,
+        "header_align": "center",
+        "scrolling_velocity": 10,
+        "pause_hover": false,
+        "shadow": false,
+        "sliders_mt": 16,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "icon_width": 200,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "dynamic_collection_list": {
       "type": "dynamic-collection-list",
       "blocks": {
@@ -366,6 +445,7 @@
   },
   "order": [
     "dynamic_slideshow",
+    "ss_scrolling_logo_cloud_HXarAm",
     "dynamic_collection_list",
     "dynamic_featured_collection-2",
     "dynamic_featured_collection",
