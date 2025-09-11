@@ -47,193 +47,6 @@
         "slideshow_text_below_image": false
       }
     },
-    "dynamic_featured_collection": {
-      "type": "dynamic-featured-collection",
-      "blocks": {
-        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5": {
-          "type": "title_card",
-          "settings": {
-            "text_alignment": "center-center",
-            "pre_heading": "Seasonal Clearance Sale",
-            "heading": "Save up to 40%",
-            "text_color": "#ffffff",
-            "show_on_mobile": true,
-            "horizontal_size": "3",
-            "vertical_size": "2",
-            "enable_full_width_on_mobile": true,
-            "cta_label": "Shop Sale",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5"
-      ],
-      "settings": {
-        "title": "Top-Kollektionen",
-        "layout": "slideshow",
-        "mobile_layout": "slideshow",
-        "collection": "",
-        "product_count": 10,
-        "cta_label": "",
-        "cta_button_style": "primary"
-      }
-    },
-    "dynamic_highlights_banner": {
-      "type": "dynamic-highlights-banner",
-      "blocks": {
-        "highlight-1": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-delivery",
-            "title": "Über 9,000+ abgeschlossene Bestellungen",
-            "text": "<p>Uns vertrauen bereits tausende Kunden</p>",
-            "link": ""
-          }
-        },
-        "highlight-3": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-delivery-package",
-            "title": "Lieferung in ganz Deutschland",
-            "text": "<p>Mit Kurier in 3-5 Tagen</p>",
-            "link": "shopify://pages/versand"
-          }
-        },
-        "highlight-2": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-thumbs-up",
-            "title": "Lange Haltbarkeit",
-            "text": "<p>Mindestens 1 Monat nach Erhalt</p>",
-            "link": ""
-          }
-        },
-        "highlight-4": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-transfer",
-            "title": "Sichere Bezahlung",
-            "text": "<p>PayPal, Klarna, Google Pay, Apple Pay, Karte</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight-1",
-        "highlight-3",
-        "highlight-2",
-        "highlight-4"
-      ],
-      "settings": {
-        "section_spacing": true,
-        "section_width": "full-width",
-        "icon_layout": "center",
-        "color": "#1d1d1d",
-        "icon_color": "#c60404",
-        "background_color": "#ffffff",
-        "mobile_layout": "grid"
-      }
-    },
-    "dynamic_featured_collection-2": {
-      "type": "dynamic-featured-collection",
-      "settings": {
-        "title": "Bestseller",
-        "layout": "slideshow",
-        "mobile_layout": "slideshow",
-        "collection": "",
-        "product_count": 25,
-        "cta_label": "",
-        "cta_button_style": "primary"
-      }
-    },
-    "dynamic_highlights_banner_gr4VzX": {
-      "type": "dynamic-highlights-banner",
-      "blocks": {
-        "highlight_be8dGD": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €60:",
-            "text": "<p>Getrocknete <strong>Mango 125g</strong> gratis 👉</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        },
-        "highlight_pzAqmN": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €80:",
-            "text": "<p>Getrocknete <strong>Mango 250g</strong> gratis 👉</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        },
-        "highlight_WVVUEk": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €100:",
-            "text": "<p>Getrocknete <strong>Mango 500g</strong> gratis</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        }
-      },
-      "block_order": [
-        "highlight_be8dGD",
-        "highlight_pzAqmN",
-        "highlight_WVVUEk"
-      ],
-      "custom_css": [],
-      "name": "t:sections.highlights_banner.presets.highlights_banner.name",
-      "settings": {
-        "section_spacing": true,
-        "section_width": "full-width",
-        "icon_layout": "left",
-        "color": "#ffffff",
-        "icon_color": "#ffffff",
-        "background_color": "#c60404",
-        "mobile_layout": "slider"
-      }
-    },
-    "dynamic_html_H3ynd7": {
-      "type": "dynamic-html",
-      "name": "t:sections.custom_html.presets.custom_html.name",
-      "settings": {
-        "title": "",
-        "custom_html": "<div class=\"klaviyo-form-UikZfz\"></div>"
-      }
-    },
-    "dynamic_promo_mosaic": {
-      "type": "dynamic-promo-mosaic",
-      "blocks": {
-        "promotion-1": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_channel_2.jpg",
-            "title": "Abonniere unseren WhatsApp-Kanal",
-            "text": "Erfahre als Erster von frischen Neuheiten, wichtigen Nachrichten, Aktionen und Sonderangeboten",
-            "color": "#ffffff",
-            "block_link": "http://ilovesnacks.de/whatsapp",
-            "button_text": "Abonnieren",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#000000",
-            "opacity": 40
-          }
-        }
-      },
-      "block_order": [
-        "promotion-1"
-      ],
-      "settings": {
-        "title": "",
-        "section_height": "large",
-        "text_alignment": "top-right",
-        "maintain_aspect_ratio": true,
-        "compress_blocks": false
-      }
-    },
     "dynamic_collection_list": {
       "type": "dynamic-collection-list",
       "blocks": {
@@ -345,16 +158,203 @@
         "cta_link": "",
         "cta_button_style": "secondary"
       }
+    },
+    "dynamic_featured_collection-2": {
+      "type": "dynamic-featured-collection",
+      "settings": {
+        "title": "Bestseller",
+        "layout": "slideshow",
+        "mobile_layout": "slideshow",
+        "collection": "",
+        "product_count": 25,
+        "cta_label": "",
+        "cta_button_style": "primary"
+      }
+    },
+    "dynamic_featured_collection": {
+      "type": "dynamic-featured-collection",
+      "blocks": {
+        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5": {
+          "type": "title_card",
+          "settings": {
+            "text_alignment": "center-center",
+            "pre_heading": "Seasonal Clearance Sale",
+            "heading": "Save up to 40%",
+            "text_color": "#ffffff",
+            "show_on_mobile": true,
+            "horizontal_size": "3",
+            "vertical_size": "2",
+            "enable_full_width_on_mobile": true,
+            "cta_label": "Shop Sale",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5"
+      ],
+      "settings": {
+        "title": "Top neue Produkte",
+        "layout": "slideshow",
+        "mobile_layout": "slideshow",
+        "collection": "",
+        "product_count": 10,
+        "cta_label": "",
+        "cta_button_style": "primary"
+      }
+    },
+    "dynamic_highlights_banner": {
+      "type": "dynamic-highlights-banner",
+      "blocks": {
+        "highlight-1": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-delivery",
+            "title": "Über 9,000+ abgeschlossene Bestellungen",
+            "text": "<p>Uns vertrauen bereits tausende Kunden</p>",
+            "link": ""
+          }
+        },
+        "highlight-3": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-delivery-package",
+            "title": "Lieferung in ganz Deutschland",
+            "text": "<p>Mit Kurier in 3-5 Tagen</p>",
+            "link": "shopify://pages/versand"
+          }
+        },
+        "highlight-2": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-thumbs-up",
+            "title": "Lange Haltbarkeit",
+            "text": "<p>Mindestens 1 Monat nach Erhalt</p>",
+            "link": ""
+          }
+        },
+        "highlight-4": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-transfer",
+            "title": "Sichere Bezahlung",
+            "text": "<p>PayPal, Klarna, Google Pay, Apple Pay, Karte</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight-1",
+        "highlight-3",
+        "highlight-2",
+        "highlight-4"
+      ],
+      "settings": {
+        "section_spacing": true,
+        "section_width": "full-width",
+        "icon_layout": "center",
+        "color": "#1d1d1d",
+        "icon_color": "#c60404",
+        "background_color": "#ffffff",
+        "mobile_layout": "grid"
+      }
+    },
+    "dynamic_highlights_banner_gr4VzX": {
+      "type": "dynamic-highlights-banner",
+      "blocks": {
+        "highlight_be8dGD": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €60:",
+            "text": "<p>Getrocknete <strong>Mango 125g</strong> gratis 👉</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        },
+        "highlight_pzAqmN": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €80:",
+            "text": "<p>Getrocknete <strong>Mango 250g</strong> gratis 👉</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        },
+        "highlight_WVVUEk": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €100:",
+            "text": "<p>Getrocknete <strong>Mango 500g</strong> gratis</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_be8dGD",
+        "highlight_pzAqmN",
+        "highlight_WVVUEk"
+      ],
+      "custom_css": [],
+      "name": "t:sections.highlights_banner.presets.highlights_banner.name",
+      "settings": {
+        "section_spacing": true,
+        "section_width": "full-width",
+        "icon_layout": "left",
+        "color": "#ffffff",
+        "icon_color": "#ffffff",
+        "background_color": "#c60404",
+        "mobile_layout": "slider"
+      }
+    },
+    "dynamic_html_H3ynd7": {
+      "type": "dynamic-html",
+      "name": "t:sections.custom_html.presets.custom_html.name",
+      "settings": {
+        "title": "",
+        "custom_html": "<div class=\"klaviyo-form-UikZfz\"></div>"
+      }
+    },
+    "dynamic_promo_mosaic": {
+      "type": "dynamic-promo-mosaic",
+      "blocks": {
+        "promotion-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_channel_2.jpg",
+            "title": "Abonniere unseren WhatsApp-Kanal",
+            "text": "Erfahre als Erster von frischen Neuheiten, wichtigen Nachrichten, Aktionen und Sonderangeboten",
+            "color": "#ffffff",
+            "block_link": "http://ilovesnacks.de/whatsapp",
+            "button_text": "Abonnieren",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#000000",
+            "opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "promotion-1"
+      ],
+      "settings": {
+        "title": "",
+        "section_height": "large",
+        "text_alignment": "top-right",
+        "maintain_aspect_ratio": true,
+        "compress_blocks": false
+      }
     }
   },
   "order": [
     "dynamic_slideshow",
+    "dynamic_collection_list",
+    "dynamic_featured_collection-2",
     "dynamic_featured_collection",
     "dynamic_highlights_banner",
-    "dynamic_featured_collection-2",
     "dynamic_highlights_banner_gr4VzX",
     "dynamic_html_H3ynd7",
-    "dynamic_promo_mosaic",
-    "dynamic_collection_list"
+    "dynamic_promo_mosaic"
   ]
 }
