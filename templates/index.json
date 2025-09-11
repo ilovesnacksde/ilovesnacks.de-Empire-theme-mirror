@@ -520,19 +520,26 @@
     "dynamic_faq_TiJaE7": {
       "type": "dynamic-faq",
       "blocks": {
+        "category_wtdEDA": {
+          "type": "category",
+          "settings": {
+            "heading": "Lieferung",
+            "show_category_card": true
+          }
+        },
         "question_z3V6wX": {
           "type": "question",
           "settings": {
-            "question": "Frequently asked question",
-            "answer": "<p>Use this text to provide answers for your most commonly asked questions.</p>",
+            "question": "In welche Länder liefern Sie?",
+            "answer": "<p>Wir liefern Bestellungen in ganz Deutschland</p>",
             "icon": "none"
           }
         },
         "question_X9XTbX": {
           "type": "question",
           "settings": {
-            "question": "Frequently asked question",
-            "answer": "<p>Use this text to provide answers for your most commonly asked questions.</p>",
+            "question": "Gibt es Lieferungen in andere Länder?",
+            "answer": "<p>Ja, Lieferungen in die baltischen Staaten (Lettland, Litauen, Estland) sind über die Website <a href=\"https://lokumdokya.eu/ru\" target=\"_blank\" title=\"https://lokumdokya.eu/ru\">lokumdokya.eu</a> möglich.<br/>In andere Länder ist eine Lieferung nicht verfügbar.</p>",
             "icon": "none"
           }
         },
@@ -546,6 +553,7 @@
         }
       },
       "block_order": [
+        "category_wtdEDA",
         "question_z3V6wX",
         "question_X9XTbX",
         "question_bEhy7M"
@@ -554,7 +562,7 @@
       "settings": {
         "section_width": "wide",
         "heading": "FAQ",
-        "enable_category_cards": false,
+        "enable_category_cards": true,
         "category_card_image_crop": "square",
         "category_heading_size": "large",
         "icon_color": "rgba(0,0,0,0)"
