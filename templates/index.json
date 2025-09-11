@@ -234,129 +234,14 @@
         "compress_blocks": false
       }
     },
-    "dynamic_featured_product": {
-      "type": "dynamic-featured-product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "24728195-5847-46e2-9432-cb0ea670bbfd": {
-          "type": "inventory_status",
-          "settings": {
-            "inventory_display": "hidden",
-            "inventory_transfer_notice": true
-          }
-        },
-        "e900bde6-bc96-44b9-adf4-3487e9b25a24": {
-          "type": "form",
-          "settings": {
-            "enable_local_pickup": true
-          }
-        },
-        "view-product-link": {
-          "type": "view-product-link",
-          "settings": {
-            "text": "View full details"
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "24728195-5847-46e2-9432-cb0ea670bbfd",
-        "e900bde6-bc96-44b9-adf4-3487e9b25a24",
-        "view-product-link"
-      ],
-      "settings": {
-        "product": "",
-        "gallery_aspect_ratio": "natural",
-        "gallery_image_crop": false,
-        "gallery_thumbnail_position": "left",
-        "gallery_thumbnail_layout": "grid",
-        "gallery_video_autoplay": false,
-        "gallery_video_looping": true,
-        "gallery_hover_zoom": "replace"
-      }
-    },
-    "dynamic_testimonials": {
-      "type": "dynamic-testimonials",
-      "blocks": {
-        "testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": "4.5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
-            "author": "<p>Author's name</p>"
-          }
-        },
-        "testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": "4",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
-            "author": "<p>Author's name</p>"
-          }
-        },
-        "testimonial-3": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
-            "author": "<p>Author's name</p>"
-          }
-        },
-        "testimonial-4": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
-            "author": "<p>Author's name</p>"
-          }
-        },
-        "testimonial-5": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": "4.5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
-            "author": "<p>Author's name</p>"
-          }
-        },
-        "testimonial-6": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": "4.5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
-            "author": "<p>Author's name</p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial-1",
-        "testimonial-2",
-        "testimonial-3",
-        "testimonial-4",
-        "testimonial-5",
-        "testimonial-6"
-      ],
-      "settings": {
-        "title": "What is everyone saying?",
-        "image_crop": "circle",
-        "text_size": "large"
-      }
-    },
     "dynamic_collection_list": {
       "type": "dynamic-collection-list",
       "blocks": {
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": ""
+            "collection": "test-1",
+            "title": "Test 55443"
           }
         },
         "collection-2": {
@@ -393,6 +278,48 @@
             "collection": "",
             "title": "Explore More"
           }
+        },
+        "collection_hGJyVr": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "collection_MgPbN6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "collection_RTCTcQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "collection_G83QqG": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "collection_mRXJGG": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "collection_FkGzeW": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
         }
       },
       "block_order": [
@@ -401,26 +328,22 @@
         "collection-3",
         "collection-4",
         "collection-5",
-        "collection-6"
+        "collection-6",
+        "collection_hGJyVr",
+        "collection_MgPbN6",
+        "collection_RTCTcQ",
+        "collection_G83QqG",
+        "collection_mRXJGG",
+        "collection_FkGzeW"
       ],
       "settings": {
-        "title": "Gifts by Price",
+        "title": "Top-Kollektionen",
         "thumbnail_columns_desktop": 6,
-        "thumbnail_columns_mobile": 2,
-        "image-crop": "circle",
+        "thumbnail_columns_mobile": 3,
+        "image-crop": "round",
         "cta_label": "",
         "cta_link": "",
         "cta_button_style": "secondary"
-      }
-    },
-    "dynamic_blog_posts": {
-      "type": "dynamic-blog-posts",
-      "settings": {
-        "title": "Getting Inspiration",
-        "blog": "blog-2",
-        "show_date": true,
-        "show_author": false,
-        "show_excerpt": true
       }
     }
   },
@@ -432,9 +355,6 @@
     "dynamic_highlights_banner_gr4VzX",
     "dynamic_html_H3ynd7",
     "dynamic_promo_mosaic",
-    "dynamic_featured_product",
-    "dynamic_testimonials",
-    "dynamic_collection_list",
-    "dynamic_blog_posts"
+    "dynamic_collection_list"
   ]
 }
