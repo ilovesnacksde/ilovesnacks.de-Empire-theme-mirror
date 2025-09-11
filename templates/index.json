@@ -547,7 +547,7 @@
           "type": "question",
           "settings": {
             "question": "Was kostet die Lieferung?",
-            "answer": "<p>- Bei Bestellungen bis €60: <strong>€6,99</strong><br/>- Ab €60: <strong>kostenlos</strong><br/><br/>Mehr Details zur Lieferung 👉<a href=\"https://ilovesnacks.de/pages/versand\" target=\"_blank\" title=\"https://ilovesnacks.de/pages/versand\"><strong>hier</strong></a></p>",
+            "answer": "<p>- Bei Bestellungen bis €60: <strong>€6,99</strong><br/>- Ab €60: <strong>kostenlos</strong><br/><br/>Mehr Details zur Lieferung 👉<a href=\"https://ilovesnacks.de/pages/versand\" target=\"_blank\" title=\"https://ilovesnacks.de/pages/versand\">hier</a></p>",
             "icon": "none"
           }
         }
