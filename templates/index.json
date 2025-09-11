@@ -612,6 +612,37 @@
             "answer": "<p>Bitte schreiben Sie uns so schnell wie möglich über <a href=\"https://wa.me/4915758340007\" target=\"_blank\" title=\"https://wa.me/4915758340007\">WhatsApp</a><br/>Wenn es noch möglich ist, helfen wir Ihnen gerne.<br/>Für solche Änderungen wird eine zusätzliche Gebühr gemäß Preisliste erhoben.</p>",
             "icon": "none"
           }
+        },
+        "category_8KpMbp": {
+          "type": "category",
+          "settings": {
+            "heading": "Produkte",
+            "show_category_card": true
+          }
+        },
+        "question_33Rmqk": {
+          "type": "question",
+          "settings": {
+            "question": "Wo finde ich Zutaten, Herkunftsland und Nährwerte?",
+            "answer": "<p>Alle Informationen finden Sie auf der jeweiligen Produktseite</p>",
+            "icon": "none"
+          }
+        },
+        "question_A4BRaE": {
+          "type": "question",
+          "settings": {
+            "question": "Wie lange sind die Produkte haltbar?",
+            "answer": "<p>Die Haltbarkeit variiert je nach Produkt.<br/>Wir stellen sicher, dass nach Erhalt der Bestellung eine Resthaltbarkeit von mindestens 1 Monat gewährleistet ist.</p>",
+            "icon": "none"
+          }
+        },
+        "question_QCJ97z": {
+          "type": "question",
+          "settings": {
+            "question": "Wie soll ich die Produkte lagern?",
+            "answer": "<p>Bitte beachten Sie die Hinweise auf der Produktseite.<br/>Grundsätzlich: kühl und trocken, ohne direkte Sonneneinstrahlung und in geschlossener Verpackung lagern.<br/>Eine Lagerung im Kühlschrank ist nicht erforderlich.<br/>Ausnahme: Oliven - geschlossene Gläser können ungekühlt gelagert werden, nach dem Öffnen jedoch nur im Kühlschrank.</p>",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -626,7 +657,11 @@
         "category_RjJpRg",
         "question_gWU7hA",
         "question_KqtdKF",
-        "question_TyrpCk"
+        "question_TyrpCk",
+        "category_8KpMbp",
+        "question_33Rmqk",
+        "question_A4BRaE",
+        "question_QCJ97z"
       ],
       "name": "t:sections.faq.presets.name",
       "settings": {
