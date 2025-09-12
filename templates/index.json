@@ -784,6 +784,85 @@
         "category_heading_size": "medium",
         "icon_color": "rgba(0,0,0,0)"
       }
+    },
+    "ss_scrolling_logo_cloud_Fj9mdP": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_hwK8w7": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_krFaqH": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_fjtiq6": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_Rme6RD": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_QpQpnj": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_P97p3g": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_hwK8w7",
+        "slide_krFaqH",
+        "slide_fjtiq6",
+        "slide_Rme6RD",
+        "slide_QpQpnj",
+        "slide_P97p3g"
+      ],
+      "name": "SS - Scrolling Logo Cloud",
+      "settings": {
+        "ss-title": "Top-Neuheiten",
+        "heading_custom": false,
+        "heading_font": "montserrat_n4",
+        "header_size": 30,
+        "header_align": "center",
+        "scrolling_velocity": 20,
+        "pause_hover": true,
+        "shadow": false,
+        "sliders_mt": 16,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "icon_width": 200,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -797,6 +876,7 @@
     "ss_scrolling_logo_cloud_HXarAm",
     "dynamic_promo_mosaic",
     "175759381886a64c5c",
-    "dynamic_faq_TiJaE7"
+    "dynamic_faq_TiJaE7",
+    "ss_scrolling_logo_cloud_Fj9mdP"
   ]
 }
