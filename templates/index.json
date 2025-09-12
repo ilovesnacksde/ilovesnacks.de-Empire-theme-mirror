@@ -47,6 +47,210 @@
         "slideshow_text_below_image": false
       }
     },
+    "ss_scrolling_logo_cloud_bMhxPJ": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_g8xBb4": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_kcLaGB": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_9HFzgF": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_xWr9KV": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_ywBgYt": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        },
+        "slide_HgeBgm": {
+          "type": "slide",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_g8xBb4",
+        "slide_kcLaGB",
+        "slide_9HFzgF",
+        "slide_xWr9KV",
+        "slide_ywBgYt",
+        "slide_HgeBgm"
+      ],
+      "name": "SS - Scrolling Logo Cloud",
+      "settings": {
+        "ss-title": "Bestseller",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 30,
+        "header_align": "center",
+        "scrolling_velocity": 20,
+        "pause_hover": false,
+        "shadow": false,
+        "sliders_mt": 16,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "icon_width": 200,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "dynamic_highlights_banner": {
+      "type": "dynamic-highlights-banner",
+      "blocks": {
+        "highlight-1": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-delivery",
+            "title": "Über 9,000+ abgeschlossene Bestellungen",
+            "text": "<p>Uns vertrauen bereits tausende Kunden</p>",
+            "link": ""
+          }
+        },
+        "highlight-3": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-delivery-package",
+            "title": "Lieferung in ganz Deutschland",
+            "text": "<p>Mit Kurier in 3-5 Tagen</p>",
+            "link": "shopify://pages/versand"
+          }
+        },
+        "highlight-2": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-thumbs-up",
+            "title": "Lange Haltbarkeit",
+            "text": "<p>Mindestens 1 Monat nach Erhalt</p>",
+            "link": ""
+          }
+        },
+        "highlight-4": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-transfer",
+            "title": "Sichere Bezahlung",
+            "text": "<p>PayPal, Klarna, Google Pay, Apple Pay, Karte</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "highlight-1",
+        "highlight-3",
+        "highlight-2",
+        "highlight-4"
+      ],
+      "settings": {
+        "section_spacing": true,
+        "section_width": "full-width",
+        "icon_layout": "center",
+        "color": "#1d1d1d",
+        "icon_color": "#c60404",
+        "background_color": "#ffffff",
+        "mobile_layout": "grid"
+      }
+    },
+    "ss_scrolling_logo_cloud_3jCnmc": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_m9M4hw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DPD.png",
+            "link": ""
+          }
+        },
+        "slide_cxNMPX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DHL_logo_54bbf107-b1c5-4d26-a22b-a8f226bf0a6a.png",
+            "link": ""
+          }
+        },
+        "slide_Gd4ER6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/UPS_logo.png",
+            "link": ""
+          }
+        },
+        "slide_g8aP6g": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/NOVAPOST_logo.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_m9M4hw",
+        "slide_cxNMPX",
+        "slide_Gd4ER6",
+        "slide_g8aP6g"
+      ],
+      "name": "SS - Scrolling Logo Cloud",
+      "settings": {
+        "ss-title": "Lieferpartner",
+        "heading_custom": false,
+        "heading_font": "montserrat_n4",
+        "header_size": 24,
+        "header_align": "center",
+        "scrolling_velocity": 20,
+        "pause_hover": true,
+        "shadow": false,
+        "sliders_mt": 0,
+        "logo_padding_top": 12,
+        "logo_padding_bottom": 0,
+        "slider_gap": 30,
+        "slider_gap_mobile": 20,
+        "slider_direction": "left",
+        "icon_width": 100,
+        "header_color": "#1d1d1d",
+        "border_color": "#ffffff",
+        "background-color": "#ffffff",
+        "slider-background-color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "dynamic_collection_list": {
       "type": "dynamic-collection-list",
       "blocks": {
@@ -159,6 +363,62 @@
         "cta_button_style": "secondary"
       }
     },
+    "dynamic_highlights_banner_gr4VzX": {
+      "type": "dynamic-highlights-banner",
+      "blocks": {
+        "highlight_be8dGD": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €60:",
+            "text": "<p>Getrocknete <strong>Mango 125g</strong> gratis 👉</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        },
+        "highlight_pzAqmN": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €80:",
+            "text": "<p>Getrocknete <strong>Mango 250g</strong> gratis 👉</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        },
+        "highlight_WVVUEk": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-gift-card",
+            "title": "Ab Bestellungen €100:",
+            "text": "<p>Getrocknete <strong>Mango 500g</strong> gratis</p>",
+            "link": "shopify://pages/mehr-uber-die-geschenke"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_be8dGD",
+        "highlight_pzAqmN",
+        "highlight_WVVUEk"
+      ],
+      "custom_css": [],
+      "name": "t:sections.highlights_banner.presets.highlights_banner.name",
+      "settings": {
+        "section_spacing": true,
+        "section_width": "full-width",
+        "icon_layout": "left",
+        "color": "#ffffff",
+        "icon_color": "#ffffff",
+        "background_color": "#c60404",
+        "mobile_layout": "slider"
+      }
+    },
+    "dynamic_html_H3ynd7": {
+      "type": "dynamic-html",
+      "name": "t:sections.custom_html.presets.custom_html.name",
+      "settings": {
+        "title": "",
+        "custom_html": "<div class=\"klaviyo-form-UikZfz\"></div>"
+      }
+    },
     "ss_scrolling_logo_cloud_HXarAm": {
       "type": "ss-scrolling-logo-cloud",
       "blocks": {
@@ -242,232 +502,6 @@
         "content_width": 120,
         "border_thickness": 0,
         "lazy": true
-      }
-    },
-    "dynamic_featured_collection": {
-      "type": "dynamic-featured-collection",
-      "blocks": {
-        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5": {
-          "type": "title_card",
-          "settings": {
-            "text_alignment": "center-center",
-            "pre_heading": "Seasonal Clearance Sale",
-            "heading": "Save up to 40%",
-            "text_color": "#ffffff",
-            "show_on_mobile": true,
-            "horizontal_size": "3",
-            "vertical_size": "2",
-            "enable_full_width_on_mobile": true,
-            "cta_label": "Shop Sale",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": [
-        "a26c1f25-0f89-43b8-b007-d8aeb9fdaec5"
-      ],
-      "settings": {
-        "title": "Top neue Produkte",
-        "layout": "slideshow",
-        "mobile_layout": "slideshow",
-        "collection": "",
-        "product_count": 10,
-        "cta_label": "",
-        "cta_button_style": "primary"
-      }
-    },
-    "ss_scrolling_logo_cloud_3jCnmc": {
-      "type": "ss-scrolling-logo-cloud",
-      "blocks": {
-        "slide_m9M4hw": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/DPD.png",
-            "link": ""
-          }
-        },
-        "slide_cxNMPX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/DHL_logo_54bbf107-b1c5-4d26-a22b-a8f226bf0a6a.png",
-            "link": ""
-          }
-        },
-        "slide_Gd4ER6": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/UPS_logo.png",
-            "link": ""
-          }
-        },
-        "slide_g8aP6g": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/NOVAPOST_logo.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_m9M4hw",
-        "slide_cxNMPX",
-        "slide_Gd4ER6",
-        "slide_g8aP6g"
-      ],
-      "name": "SS - Scrolling Logo Cloud",
-      "settings": {
-        "ss-title": "Lieferpartner",
-        "heading_custom": false,
-        "heading_font": "montserrat_n4",
-        "header_size": 24,
-        "header_align": "center",
-        "scrolling_velocity": 20,
-        "pause_hover": true,
-        "shadow": false,
-        "sliders_mt": 0,
-        "logo_padding_top": 12,
-        "logo_padding_bottom": 0,
-        "slider_gap": 30,
-        "slider_gap_mobile": 20,
-        "slider_direction": "left",
-        "icon_width": 100,
-        "header_color": "#1d1d1d",
-        "border_color": "#ffffff",
-        "background-color": "#ffffff",
-        "slider-background-color": "#ffffff",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 40,
-        "padding_bottom": 0,
-        "full_width": true,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
-    "dynamic_featured_collection-2": {
-      "type": "dynamic-featured-collection",
-      "settings": {
-        "title": "Bestseller",
-        "layout": "slideshow",
-        "mobile_layout": "slideshow",
-        "collection": "",
-        "product_count": 25,
-        "cta_label": "",
-        "cta_button_style": "primary"
-      }
-    },
-    "dynamic_highlights_banner": {
-      "type": "dynamic-highlights-banner",
-      "blocks": {
-        "highlight-1": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-delivery",
-            "title": "Über 9,000+ abgeschlossene Bestellungen",
-            "text": "<p>Uns vertrauen bereits tausende Kunden</p>",
-            "link": ""
-          }
-        },
-        "highlight-3": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-delivery-package",
-            "title": "Lieferung in ganz Deutschland",
-            "text": "<p>Mit Kurier in 3-5 Tagen</p>",
-            "link": "shopify://pages/versand"
-          }
-        },
-        "highlight-2": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-thumbs-up",
-            "title": "Lange Haltbarkeit",
-            "text": "<p>Mindestens 1 Monat nach Erhalt</p>",
-            "link": ""
-          }
-        },
-        "highlight-4": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-transfer",
-            "title": "Sichere Bezahlung",
-            "text": "<p>PayPal, Klarna, Google Pay, Apple Pay, Karte</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight-1",
-        "highlight-3",
-        "highlight-2",
-        "highlight-4"
-      ],
-      "settings": {
-        "section_spacing": true,
-        "section_width": "full-width",
-        "icon_layout": "center",
-        "color": "#1d1d1d",
-        "icon_color": "#c60404",
-        "background_color": "#ffffff",
-        "mobile_layout": "grid"
-      }
-    },
-    "dynamic_highlights_banner_gr4VzX": {
-      "type": "dynamic-highlights-banner",
-      "blocks": {
-        "highlight_be8dGD": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €60:",
-            "text": "<p>Getrocknete <strong>Mango 125g</strong> gratis 👉</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        },
-        "highlight_pzAqmN": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €80:",
-            "text": "<p>Getrocknete <strong>Mango 250g</strong> gratis 👉</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        },
-        "highlight_WVVUEk": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-gift-card",
-            "title": "Ab Bestellungen €100:",
-            "text": "<p>Getrocknete <strong>Mango 500g</strong> gratis</p>",
-            "link": "shopify://pages/mehr-uber-die-geschenke"
-          }
-        }
-      },
-      "block_order": [
-        "highlight_be8dGD",
-        "highlight_pzAqmN",
-        "highlight_WVVUEk"
-      ],
-      "custom_css": [],
-      "name": "t:sections.highlights_banner.presets.highlights_banner.name",
-      "settings": {
-        "section_spacing": true,
-        "section_width": "full-width",
-        "icon_layout": "left",
-        "color": "#ffffff",
-        "icon_color": "#ffffff",
-        "background_color": "#c60404",
-        "mobile_layout": "slider"
-      }
-    },
-    "dynamic_html_H3ynd7": {
-      "type": "dynamic-html",
-      "name": "t:sections.custom_html.presets.custom_html.name",
-      "settings": {
-        "title": "",
-        "custom_html": "<div class=\"klaviyo-form-UikZfz\"></div>"
       }
     },
     "dynamic_promo_mosaic": {
@@ -754,14 +788,13 @@
   },
   "order": [
     "dynamic_slideshow",
-    "dynamic_collection_list",
-    "ss_scrolling_logo_cloud_HXarAm",
-    "dynamic_featured_collection",
-    "ss_scrolling_logo_cloud_3jCnmc",
-    "dynamic_featured_collection-2",
+    "ss_scrolling_logo_cloud_bMhxPJ",
     "dynamic_highlights_banner",
+    "ss_scrolling_logo_cloud_3jCnmc",
+    "dynamic_collection_list",
     "dynamic_highlights_banner_gr4VzX",
     "dynamic_html_H3ynd7",
+    "ss_scrolling_logo_cloud_HXarAm",
     "dynamic_promo_mosaic",
     "175759381886a64c5c",
     "dynamic_faq_TiJaE7"
