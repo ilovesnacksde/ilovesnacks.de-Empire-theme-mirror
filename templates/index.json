@@ -257,84 +257,72 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "test-1",
-            "title": "Test 55443"
+            "collection": "trockenfruechte",
+            "image": "shopify://shop_images/Dried_mango_without_sugar.jpg",
+            "title": ""
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "test-2",
+            "collection": "samarkandische-sussigkeiten",
+            "image": "shopify://shop_images/Samarkandas_halva_ar_zemenem_un_saldo_krejumu-2.jpg",
             "title": ""
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "test-3",
+            "collection": "lokum",
+            "image": "shopify://shop_images/Lukumaspilventinsarmandelemun_nutellu_-2.jpg",
             "title": ""
           }
         },
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "test-4",
+            "collection": "baklava",
+            "image": "shopify://shop_images/Baklava-pistacijurullisi04.jpg",
             "title": ""
           }
         },
         "collection-5": {
           "type": "collection",
           "settings": {
-            "collection": "test-2",
-            "title": "Over 25% Off"
+            "collection": "🍬-bonbons",
+            "image": "shopify://shop_images/Mango_koslajamas_konfektes_f52ed840-baa7-42b4-896c-49daf7c74017.jpg",
+            "title": ""
           }
         },
         "collection-6": {
           "type": "collection",
           "settings": {
-            "collection": "test-1",
-            "title": "Explore More"
+            "collection": "🌰-halva",
+            "image": "shopify://shop_images/Halva_-_zemesriekstu_ar_pistacijam.jpg",
+            "title": ""
           }
         },
         "collection_hGJyVr": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "gewuerze",
+            "image": "shopify://shop_images/kiploks_un_paprika_04.jpg",
             "title": ""
           }
         },
         "collection_MgPbN6": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "oliven",
+            "image": "shopify://shop_images/C464A4A6-4927-4162-A08B-4E49194C43AB.jpg",
             "title": ""
           }
         },
         "collection_RTCTcQ": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection_G83QqG": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection_mRXJGG": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection_FkGzeW": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
+            "collection": "🌾-getreide",
+            "image": "shopify://shop_images/IMG-0323.jpg",
             "title": ""
           }
         }
@@ -348,10 +336,7 @@
         "collection-6",
         "collection_hGJyVr",
         "collection_MgPbN6",
-        "collection_RTCTcQ",
-        "collection_G83QqG",
-        "collection_mRXJGG",
-        "collection_FkGzeW"
+        "collection_RTCTcQ"
       ],
       "settings": {
         "title": "Top-Kollektionen",
