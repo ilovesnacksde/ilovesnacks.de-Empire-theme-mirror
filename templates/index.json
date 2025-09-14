@@ -325,6 +325,30 @@
             "image": "shopify://shop_images/IMG-0323.jpg",
             "title": ""
           }
+        },
+        "collection_4AmUpq": {
+          "type": "collection",
+          "settings": {
+            "collection": "finger-suessigkeiten",
+            "image": "shopify://shop_images/AuglupirkstiniMIX02.jpg",
+            "title": ""
+          }
+        },
+        "collection_pNPQ7F": {
+          "type": "collection",
+          "settings": {
+            "collection": "dragees",
+            "image": "shopify://shop_images/Draz-ejas_ar_apelsinu_cukatiem_piena_belgu_sokolade-1_2.jpg",
+            "title": ""
+          }
+        },
+        "collection_KLFKFz": {
+          "type": "collection",
+          "settings": {
+            "collection": "sherbet",
+            "image": "shopify://shop_images/Serbets_ar_plombira_garsu_un_pistacijam-1.jpg",
+            "title": ""
+          }
         }
       },
       "block_order": [
@@ -336,7 +360,10 @@
         "collection-6",
         "collection_hGJyVr",
         "collection_MgPbN6",
-        "collection_RTCTcQ"
+        "collection_RTCTcQ",
+        "collection_4AmUpq",
+        "collection_pNPQ7F",
+        "collection_KLFKFz"
       ],
       "settings": {
         "title": "Top-Kollektionen",
