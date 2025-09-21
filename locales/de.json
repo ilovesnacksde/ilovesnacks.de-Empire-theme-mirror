@@ -649,6 +649,9 @@
     "checkout": {
       "tips": {
         "description": "👈 Bedanke dich bei I 💘 SNACKS"
+      },
+      "contact": {
+        "address_title": "Adresse 2"
       }
     }
   }
