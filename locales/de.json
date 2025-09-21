@@ -652,6 +652,9 @@
       },
       "contact": {
         "address1_label": "Vollständige Adresse (Straße Haus-Wohnung)"
+      },
+      "shipping_errors": {
+        "empty_state": "SEHR WICHTIG: Vollständige und genaue Adresse (Straße Haus-Wohnung).  Keine Kommas im Adressefeld.  Name im Auftrag = Name an der Klingel."
       }
     }
   }
