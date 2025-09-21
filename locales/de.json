@@ -651,7 +651,7 @@
         "description": "👈 Bedanke dich bei I 💘 SNACKS"
       },
       "contact": {
-        "address1_label": "Vollständige und genaue Adresse"
+        "address1_label": "Vollständige Adresse (Straße Haus-Wohnung)"
       }
     }
   }
