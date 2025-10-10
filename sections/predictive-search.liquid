@@ -94,6 +94,35 @@
                     </figure>
                     <div class="search-flydown--product-text">
                       <span class="search-flydown--product-title">{{ product.title }}</span>
+                      {%- assign product_sku = product.selected_or_first_available_variant.sku | default: product.variants.first.sku -%}
+                      {%- capture sanitized_terms -%}
+                        {%
+                          render 'search-sanitizer',
+                          search_terms: predictive_search.terms,
+                        %}
+                      {%- endcapture -%}
+                      {%- assign sanitized_terms = sanitized_terms | strip | downcase -%}
+                      
+                      {%- if product_sku != blank -%}
+                        {%- assign sku_lower = product_sku | downcase -%}
+                        {%- if sku_lower contains sanitized_terms or sanitized_terms contains sku_lower -%}
+                          <span class="search-flydown--product-sku" style="font-size: 0.85em; color: #666; display: block;">SKU: {{ product_sku }}</span>
+                        {%- endif -%}
+                      {%- endif -%}
+                      
+                      {%- assign matching_tags = '' -%}
+                      {%- for tag in product.tags -%}
+                        {%- assign tag_lower = tag | downcase -%}
+                        {%- if tag_lower contains sanitized_terms or sanitized_terms contains tag_lower -%}
+                          {%- if matching_tags != '' -%}
+                            {%- assign matching_tags = matching_tags | append: ', ' -%}
+                          {%- endif -%}
+                          {%- assign matching_tags = matching_tags | append: tag -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                      {%- if matching_tags != '' -%}
+                        <span class="search-flydown--product-tags" style="font-size: 0.85em; color: #666; display: block;">Tags: {{ matching_tags }}</span>
+                      {%- endif -%}
                       {%- liquid
                         assign on_sale = false
                         for variant in product.variants
