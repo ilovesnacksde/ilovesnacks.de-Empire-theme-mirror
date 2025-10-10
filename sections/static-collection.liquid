@@ -342,15 +342,9 @@
             data-html="productgrid-items"
             data-productgrid-items
           >
-<div class="ld-grid"
-     style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:5px; padding:5px;">
+<div class="ld-grid"style="display:grid; gap:2px;grid-row-gap: 5px;">
 
-<div id="ld-grid" style="display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:5px; padding:5px;">
-
-
-
-
-
+<div id="ld-grid" style="display:grid; gap:2px;grid-row-gap: 5px;">
   {% for product in collection.products %}
     {%
       render 'product-grid-item',
@@ -360,9 +354,7 @@
       products_per_row: products_per_row,
     %}
   {% endfor %}
-
 </div>
-
 <style>
   @media (min-width:1024px){
     #ld-grid{ grid-template-columns:repeat(4, minmax(0,1fr)); }
@@ -391,19 +383,13 @@
   }
 </style>
 </div>
-
-
-
-
-
-
+{% comment %} 
 <style>
   @media (min-width:1024px){
     .ld-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
   }
   .ld-grid > * { margin:0 !important; }
-</style>
-
+</style> {% endcomment %}
         </div>
       {% else %}
         <div class="productgrid--no-results">
