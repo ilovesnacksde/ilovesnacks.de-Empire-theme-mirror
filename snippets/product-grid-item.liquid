@@ -235,14 +235,7 @@
   {% if recently_viewed %}
     data-recently_viewed-card
   {% endif %}
-  style="box-sizing:border-box; width:50% !important; padding:5px; display:inline-block; vertical-align:top;"
 >
-<style>
-  @media (min-width:1024px){
-    .productgrid--item{ width:25% !important; }
-  }
-</style>
-
   <div class="productitem" data-product-item-content>
     {% assign template_allows_compare = settings.enable_product_compare %}
     {% if template.name == 'cart' %}
@@ -308,42 +301,37 @@
         </div>
       {% endunless %}
     {% endif %}
-
-
-
-
-
 {%- liquid
-  assign preview_image = product.featured_media.preview_image
-    | default: product.featured_image
-    | default: product.images.first
+  assign preview_image = product.featured_media.preview_image | default: product.featured_image | default: product.images.first
   assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
 -%}
 
-<div class="grid-product__image-mask"
-     style="display:block; width:100% !important; max-width:none !important; min-width:0 !important; flex:0 0 100% !important; align-self:stretch !important; margin:0; padding:0;">
-  {%- if preview_image -%}
-    <div style="position:relative; width:100%; height:0; padding-bottom: {{ 100 | divided_by: preview_image.aspect_ratio | default: 100 }}%; margin:0;">
-      <img
-        src="{{ preview_image | image_url: width: 720 }}"
-        data-src="{{ img_url }}"
-        data-widths="[360,540,720,900,1080]"
-        data-aspectratio="{{ preview_image.aspect_ratio }}"
-        data-sizes="auto"
-        alt="{{ preview_image.alt | default: product.title | escape }}"
-        loading="lazy"
-        style="position:absolute; inset:0; display:block; width:100% !important; height:100% !important; object-fit:cover; margin:0; padding:0; border:0;"
-        class="lazyload"
-      >
-      <noscript>
-        <img src="{{ preview_image | image_url: width: 720 }}"
-             alt="{{ preview_image.alt | default: product.title | escape }}"
-             style="display:block; width:100%; height:auto; border:0;">
-      </noscript>
-    </div>
-  {%- endif -%}
-</div>
+<style>
+  /* local fallback for image block (scoped by product id) */
+  .ld-img-{{ product.id }}{ position:relative; width:100%; }
+  .ld-img-{{ product.id }} img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+  .ld-img-contain-{{ product.id }} img{ object-fit:contain; }
+  .ld-img-wrap-{{ product.id }}{ position:relative; width:100%; height:0; padding-bottom: calc(100% / {{ preview_image.aspect_ratio | default: 1.0 }}); }
+</style>
 
+<div class="grid-product__image-mask">
+  <a href="{{ product.url }}" class="product_link_cus">
+  <div class="ld-img-wrap-{{ product.id }}">
+    <img
+      class="lazyload"
+      src="{{ preview_image | img_url: '540x' }}"
+      data-src="{{ img_url }}"
+      data-widths="[360,540,720,900,1080]"
+      data-aspectratio="{{ preview_image.aspect_ratio }}"
+      data-sizes="auto"
+      alt="{{ preview_image.alt | escape }}"
+    >
+    <noscript>
+      <img src="{{ preview_image | img_url: '540x' }}" alt="{{ preview_image.alt | escape }}">
+    </noscript>
+  </div>
+</a>
+</div>
 
 
 
