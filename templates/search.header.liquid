@@ -92,6 +92,9 @@
           "title": {{ item.title | highlight: sanitized_terms | json }},
           "id": {{ item.id | json }},
           "handle": {{ item.handle | json }},
+          "sku": {{ item.selected_or_first_available_variant.sku | default: item.variants.first.sku | json }},
+          "tags": {{ item.tags | json }},
+          "collections": {{ item.collections | map: 'title' | json }},
           "on_sale": {{ on_sale | json }},
           "consistent_saved": {{ consistent_saved | json }},
           "price": {
@@ -119,7 +122,27 @@
         ,
         {
           "title": {{ item.title | json }},
-          "url": {{ item.url | json }}
+          "url": {{ item.url | json }},
+          "type": "{{ item.object_type }}"
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- capture collection_results -%}
+    {%- for collection in collections -%}
+      {%- assign collection_match = false -%}
+      {%- if collection.title contains sanitized_terms or collection.description contains sanitized_terms -%}
+        {%- assign collection_match = true -%}
+      {%- endif -%}
+      {%- if collection_match -%}
+        ,
+        {
+          "title": {{ collection.title | highlight: sanitized_terms | json }},
+          "url": {{ collection.url | json }},
+          "type": "collection",
+          "id": {{ collection.id | json }},
+          "handle": {{ collection.handle | json }}
         }
       {%- endif -%}
     {%- endfor -%}
@@ -128,6 +151,7 @@
 {
   "content": [{{ content_results | strip_newlines | remove_first: ',' }}],
   "products": [{{ product_results | strip_newlines | remove_first: ',' }}],
+  "collections": [{{ collection_results | strip_newlines | remove_first: ',' }}],
   "terms": {{ search.terms | json }},
   "sanitizedTerms": {{ sanitized_terms | json }}
 }
