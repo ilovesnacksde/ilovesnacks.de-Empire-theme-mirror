@@ -143,7 +143,7 @@
           "settings": {
             "icon": "icon-delivery-package",
             "title": "Lieferung in ganz Deutschland",
-            "text": "<p>Mit Kurier in 3-5 Tagen</p>",
+            "text": "<p>Mit Kurier in 4-5 Tagen</p>",
             "link": "shopify://pages/versand"
           }
         },
