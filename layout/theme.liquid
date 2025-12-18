@@ -1,11 +1,15 @@
 <!doctype html>
 <html class="no-js no-touch" lang="{{ request.locale.iso_code }}">
   <head>
-{% if template == 'index' %}
+
+
+
+{% if template == 'index' and request.host contains 'ilovesnacks.eu' %}
   <script>
     window.location.replace('/pages/choose-your-store');
   </script>
 {% endif %}
+
 
 
 
