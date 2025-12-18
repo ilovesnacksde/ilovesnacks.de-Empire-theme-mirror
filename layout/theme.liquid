@@ -1,6 +1,14 @@
 <!doctype html>
 <html class="no-js no-touch" lang="{{ request.locale.iso_code }}">
   <head>
+{% if template == 'index' %}
+  <script>
+    window.location.replace('/pages/choose-your-store');
+  </script>
+{% endif %}
+
+
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
 
