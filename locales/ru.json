@@ -440,13 +440,74 @@
       "item": "Элемент",
       "sku": "Артикул",
       "price": "Цена",
-      "quantity": "Количество"
+      "quantity": "Количество",
+      "total": "Общий",
+      "fulfilled_at": "Выполнено {{ date }}",
+      "subtotal": "Итого",
+      "order_notes": "Примечания к заказу",
+      "additional_notes": "Дополнительные примечания",
+      "back_to_account": "Вернуться в аккаунт",
+      "select_all_items": "Выбрать все товары",
+      "selected": "Избранные",
+      "product_missing": "Данный товар больше не выпускается.",
+      "variant_missing": "Этот вариант больше не существует.",
+      "add_selected_items": "Добавить выбранные товары в корзину",
+      "atc_success": "Товары успешно добавлены в корзину!"
+    },
+    "recover_password": {
+      "title": "Сбросить пароль",
+      "cancel": "Отмена",
+      "subtitle": "Мы вышлем вам электронное письмо для сброса пароля.",
+      "success": "Мы отправили вам электронное письмо со ссылкой для обновления пароля."
+    },
+    "register": {
+      "title": "Зарегистрироваться",
+      "submit": "Создавать",
+      "returning_customer": "Вы постоянный клиент?",
+      "success": "Мы отправили вам электронное письмо, пожалуйста, перейдите по ссылке, чтобы подтвердить свой адрес электронной почты."
+    },
+    "reset_password": {
+      "title": "Сбросить пароль",
+      "subtitle": "Сбросить пароль для {{ user }}",
+      "submit": "Восстановить пароль"
     }
   },
   "search": {
     "predictive_search": {
       "view_all_results": "Поиск по запросу \" {{ terms }} \"",
-      "no_results": "Соответствующих результатов не найдено."
+      "no_results": "Соответствующих результатов не найдено.",
+      "suggestions": "Предложения",
+      "products_title": "Продукты",
+      "pages_title": "Страницы",
+      "posts_title": "Сообщения",
+      "pages_and_posts_title": "Страницы и записи"
+    },
+    "form": {
+      "cancel": "Отмена",
+      "label": "Поиск",
+      "placeholder": "Что Вы ищете?",
+      "filter_all": "Все категории"
+    },
+    "general": {
+      "breadcrumbs_count": "{{ count }} {{ results }} for \" {{ terms }} \"",
+      "breadcrumbs_count_when_filtered": {
+        "zero": "Результаты поиска по запросу “ {{ terms }} ” в {{ category }} отсутствуют.",
+        "one": "Один результат для запроса « {{ terms }} » в {{ category }}",
+        "other": "Результаты поиска по запросу « {{ terms }} » в {{ category }} ( {{ count }} )"
+      },
+      "view_all_results": "Просмотреть все результаты",
+      "view_all_products": "Посмотреть все товары",
+      "no_search_performed": "Воспользуйтесь поисковой строкой выше для выполнения поиска.",
+      "no_results_title": "{{ count }} {{ results }} for \" {{ terms }} \". Проверьте орфографию или используйте другое слово или фразу.",
+      "results": {
+        "one": "результат",
+        "other": "результаты"
+      },
+      "no_results_products_title_in_category": "Нет товаров по запросу “ {{ terms }} ” в {{ category }} .",
+      "no_more_results_products_title": "Больше нет товаров для « {{ terms }} ».",
+      "no_more_results_products_title_in_category": "Больше нет товаров по запросу « {{ terms }} » в {{ category }} .",
+      "pages_title": "Страницы",
+      "posts_title": "Сообщения"
     }
   },
   "onboarding": {
@@ -472,6 +533,97 @@
     },
     "page": {
       "title": "Заголовок страницы"
+    }
+  },
+  "giftcard": {
+    "issued": {
+      "title_html": "Вот ваша подарочная карта {{ value }} для {{ shop }} !",
+      "subtext": "Ваша подарочная карта",
+      "disabled": "Неполноценный",
+      "expired": "Срок действия истек {{ expiry }}",
+      "active": "Срок действия истекает {{ expiry }}",
+      "redeem_html": "Используйте этот код при оформлении заказа, чтобы активировать подарочную карту {{ value }}",
+      "shop_link": "Начните покупки",
+      "print": "Распечатайте эту подарочную карту",
+      "remaining_html": "{{ balance }} слева",
+      "add_to_apple_wallet": "Добавить в Apple Wallet"
+    }
+  },
+  "password": {
+    "general": {
+      "title": "Скоро открытие"
+    },
+    "password_entry": {
+      "title": "Войдите в магазин, используя пароль.",
+      "password": "Пароль",
+      "submit": "Представлять на рассмотрение",
+      "store_owner": "Вы владелец магазина?",
+      "log_in": "Войдите здесь."
+    },
+    "mailing_list": {
+      "your_email": "Ваш адрес электронной почты",
+      "submit": "Представлять на рассмотрение"
+    },
+    "social": {
+      "follow_us": "Следуйте за нами!"
+    }
+  },
+  "product_grid": {
+    "filters": {
+      "title_count": {
+        "zero": "Фильтры",
+        "other": "Фильтры ( {{ count }} )"
+      },
+      "remove_filter": "Удалить фильтр",
+      "clear_all": "Очистить все"
+    },
+    "menus": {
+      "title": "Меню"
+    },
+    "sort_by": {
+      "title": "Сортировать по"
+    },
+    "show_per_page": {
+      "title": "Показывать"
+    },
+    "view_as": {
+      "title": "Просмотреть как"
+    },
+    "no_results": {
+      "empty": "Эта коллекция пуста.",
+      "tags_empty": "Товаров, соответствующих вашему запросу, нет."
+    }
+  },
+  "product_compare": {
+    "compare": "Сравнивать",
+    "clear_all": "Очистить все товары",
+    "drawer_title": "Сравните товары",
+    "drawer_notification": {
+      "one": "Выберите 2 или 3 товара для сравнения.",
+      "other": "{{ count }} из 3 выбранных элементов"
+    },
+    "drawer_notification_placeholder": {
+      "first": "Выберите первый элемент для сравнения.",
+      "second": "Выберите второй элемент для сравнения.",
+      "third": "Выберите третий элемент для сравнения."
+    },
+    "card_placeholder_text": "Выберите другой товар для сравнения.",
+    "drawer_clear_all": "Очистить все",
+    "no_products_selected": "Товары не выбраны",
+    "vendor": "Продавец",
+    "availability": "Доступность",
+    "description": "Описание",
+    "rating": "Отзывы о товарах",
+    "breadcrumb": "Вернуться к {{ location }}",
+    "breadcrumb_generic": "Назад",
+    "remove": "Удалять"
+  },
+  "add_to_cart_banner": {
+    "general": {
+      "product_added": "Добавлено в корзину:",
+      "sub_total": "Итого к корзине",
+      "view_cart_html": "Просмотреть корзину ( {{ count }} )",
+      "checkout": "Проверить"
     }
   }
 }
