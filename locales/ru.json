@@ -175,7 +175,142 @@
       "collections": "Коллекции"
     },
     "general": {
-      "email": "Электронная почта"
+      "email": "Электронная почта",
+      "quantity": "Количество",
+      "see_more": "Смотрите больше",
+      "see_less": "Скрыть"
+    },
+    "pagination": {
+      "prev": "Предыдущий",
+      "next": "Следующий"
+    },
+    "title": {
+      "tags": " — Отмечено тегами \" {{ tags }} \"",
+      "page": " — Страница {{ page }}",
+      "shop": " - {{ shop }}",
+      "product_compare": "Сравнение товаров"
+    },
+    "newsletter": {
+      "subscribe": "Зарегистрироваться",
+      "placeholder": "Адрес электронной почты",
+      "success": "Спасибо за регистрацию!"
+    },
+    "share_buttons": {
+      "title": "Поделиться этим:",
+      "title_short": "Делиться:"
+    },
+    "accessibility": {
+      "increase_quantity": "Увеличьте количество на {{ increment }}",
+      "decrease_quantity": "Уменьшить количество на {{ increment }}",
+      "skip_to_content": "Перейти к содержимому",
+      "cart": "Просмотреть корзину",
+      "menu": "Меню",
+      "search": "Поиск",
+      "search_results": "Результаты поиска по запросу « {{ terms }} »",
+      "search_products": "Продукты",
+      "swatches_toggle": "Показать образцы",
+      "close": "Закрывать",
+      "nav_main": "Основной",
+      "nav_secondary": "Вторичный",
+      "nav_sidebar": "Боковая панель",
+      "nav_footer": "Нижний колонтитул",
+      "nav_product_thumbnail": "миниатюра",
+      "product_zoom_dialog": "Диалоговое окно масштабирования продукта",
+      "nav_collection_utilities": "Утилиты сбора данных",
+      "nav_breadcrumbs": "Панировочные сухари",
+      "social_media_icon": "Найдите нас на {{ platform }}",
+      "share_on_facebook": "Поделиться в Facebook",
+      "share_on_pinterest": "Закрепить на Pinterest",
+      "share_on_x": "Поделиться на X",
+      "share_on_linkedin": "Поделиться в LinkedIn",
+      "no_matched_products": "{{ tag }} не имеет совпадений с товарами",
+      "star_review_text": "Обзор",
+      "star_reviews_text": "Отзывы",
+      "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звезд"
+    },
+    "time": {
+      "clear": "Очистить список недавно просмотренных",
+      "previous": "Вы недавно просматривали",
+      "second": "второй",
+      "seconds": "секунд",
+      "minute": "минута",
+      "minutes": "минут",
+      "hour": "час",
+      "hours": "часы",
+      "ago": "назад"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox_label": "Я хочу отправить это в качестве подарка.",
+      "email_label": "Адрес электронной почты получателя",
+      "email_placeholder": "Адрес электронной почты получателя *",
+      "error_message": "Адрес электронной почты недействителен.",
+      "name_label": "Имя получателя (необязательно)",
+      "name_placeholder": "Имя получателя (необязательно)",
+      "message_label": "Сообщение (необязательно)",
+      "message_placeholder": "Сообщение (необязательно)",
+      "max_characters": "{{ max_characters }} символов максимальное количество",
+      "send_on_label": "Отправить (необязательно)",
+      "send_on_placeholder": "ГГГГ-ММ-ДД"
+    }
+  },
+  "age_gate": {
+    "form": {
+      "confirm": "Подтвердите свой возраст и перейдите в {{ shop }}",
+      "error": "Доступ в магазин разрешен только взрослым в возрасте {{ age }} и старше.",
+      "day": "День",
+      "month": "Месяц",
+      "year": "Год",
+      "january": "Январь",
+      "february": "Февраль",
+      "march": "Маршировать",
+      "april": "Апрель",
+      "may": "Может",
+      "june": "Июнь",
+      "july": "Июль",
+      "august": "Август",
+      "september": "Сентябрь",
+      "october": "Октябрь",
+      "november": "Ноябрь",
+      "december": "Декабрь"
+    }
+  },
+  "header": {
+    "account": {
+      "title": "Мой счет",
+      "login": "Авторизоваться",
+      "logout": "Выйти"
+    }
+  },
+  "footer": {
+    "general": {
+      "copyright_html": "Авторские права © {{ year }} {{ shop_name }} .",
+      "follow_us": "Подписывайтесь на нас"
+    }
+  },
+  "blog": {
+    "general": {
+      "empty_blog": "К сожалению, в этом блоге нет опубликованных статей.",
+      "read_more": "Читать сейчас",
+      "see_more": "Смотрите больше"
+    },
+    "article": {
+      "filed_in": "Рубрика:",
+      "previous_article": "Предыдущая статья",
+      "next_article": "Следующая статья"
+    },
+    "comments": {
+      "title": "Комментарии",
+      "name": "Ваше имя",
+      "email": "Электронная почта",
+      "message": "Сообщение",
+      "submit": "Оставить комментарий",
+      "moderated": "Комментарии должны быть одобрены перед публикацией.",
+      "success": "Отлично! Ваш комментарий успешно опубликован.",
+      "success_moderated": "Отлично! Мы получили ваш комментарий и вскоре рассмотрим его.",
+      "leave_comment": "Оставьте комментарий",
+      "required_fields": "* Обязательные поля"
     }
   }
 }
