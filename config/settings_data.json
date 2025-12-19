@@ -52,7 +52,7 @@
     "product_sales_badge_style": "percent",
     "inventory_status": false,
     "inventory_display": "low_stock_only",
-    "low_stock_threshold": 20,
+    "low_stock_threshold": 10,
     "product_option_style": "radio",
     "sold_out_options": "hidden",
     "select_first_available_variant": true,
