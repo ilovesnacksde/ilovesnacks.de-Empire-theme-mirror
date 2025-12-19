@@ -312,5 +312,166 @@
       "leave_comment": "Оставьте комментарий",
       "required_fields": "* Обязательные поля"
     }
+  },
+  "cart": {
+    "general": {
+      "your_cart": "Ваша корзина",
+      "continue_shopping": "Продолжить покупки",
+      "price": "Цена",
+      "quantity": "Кол-во",
+      "checkout": "Проверить",
+      "update": "Обновить корзину",
+      "subtotal": "Итого",
+      "enter_order_note": "Ниже вы можете ввести текст подарочной записки или особые указания по доставке:",
+      "special_instructions": "Особые указания",
+      "tax_and_shipping": "Налоги и стоимость доставки рассчитываются при оформлении заказа.",
+      "taxes_and_shipping_policy_at_checkout_html": "Налоги и <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">стоимость доставки</a> рассчитываются при оформлении заказа.",
+      "taxes_included_but_shipping_at_checkout": "Налог включен в стоимость, стоимость доставки рассчитывается при оформлении заказа.",
+      "taxes_included_and_shipping_policy_html": "Налог включен в стоимость. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Стоимость доставки</a> рассчитывается при оформлении заказа.",
+      "cart_empty": "Ваша корзина пуста"
+    },
+    "shipping": {
+      "calculate_shipping": "Рассчитать стоимость доставки",
+      "hide_shipping_calculator": "Скрыть калькулятор доставки",
+      "country": "Страна",
+      "province": "Провинция",
+      "zip": "Почтовый индекс",
+      "calculating": "Расчет",
+      "multiple_rates": "Мы обнаружили {{ number_of_rates }} доступных тарифов доставки для {{ address }} , начиная с {{ rate }} .",
+      "one_rate": "Мы нашли один доступный тариф доставки для {{ address }} .",
+      "no_rates": "К сожалению, мы не осуществляем доставку в этот регион.",
+      "no_shipping_required": "Доставка не требуется для вашей корзины.",
+      "shipment_too_heavy": "Извините, но этот груз слишком тяжелый для отправки почтой.",
+      "error_general": "К сожалению, в данный момент мы не можем рассчитать стоимость доставки."
+    },
+    "free_shipping_bar": {
+      "free_shipping_ineligible_html": "<strong>{{ amount }}</strong> отделяет вас от бесплатной доставки!",
+      "free_shipping_eligible_html": "Вы имеете право на <strong>бесплатную доставку</strong> !",
+      "free_shipping_empty_html": "Бесплатная доставка при заказе на сумму свыше <strong>{{ amount }}</strong> !"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Имя",
+      "email": "Электронная почта",
+      "phone": "Номер телефона",
+      "message": "Сообщение",
+      "send": "Отправлять",
+      "post_success": "Спасибо за обращение. Мы свяжемся с вами как можно скорее."
+    }
+  },
+  "customers": {
+    "forms": {
+      "address_1": "Адрес 1",
+      "address_2": "Адрес 2",
+      "cancel": "Отмена",
+      "city": "Город",
+      "company": "Компания",
+      "country": "Страна",
+      "email": "Электронная почта",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "password": "Пароль",
+      "repeat_password": "Повторите пароль",
+      "phone": "Телефон",
+      "province": "Штат/Провинция",
+      "set_default": "Установить значение по умолчанию",
+      "submit": "Представлять на рассмотрение",
+      "zip": "Почтовый индекс"
+    },
+    "account": {
+      "title": "Мой счет",
+      "order_history": "История заказов",
+      "order": "Заказ",
+      "payment": "Оплата",
+      "fulfillment": "Исполнение",
+      "total": "Общий",
+      "default_address": "Адрес по умолчанию",
+      "view_addresses": "Просмотреть адреса ( {{ count }} )",
+      "empty": "У вас нет заказов.",
+      "new_address_link": "Добавить новый адрес",
+      "logout": "Выйти"
+    },
+    "activate_account": {
+      "title": "Активировать аккаунт",
+      "submit": "Активировать аккаунт",
+      "decline_activation": "Отклонить приглашение"
+    },
+    "addresses": {
+      "title": "Мои адреса",
+      "addresses_list_title": "Адреса",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "add_new_address": "Добавить новый адрес",
+      "default_address_message": "Адрес по умолчанию",
+      "set_default": "Установить в качестве адреса по умолчанию",
+      "submit": "Добавить адрес",
+      "update": "Обновить адрес",
+      "add_new_title": "Добавить новый адрес",
+      "edit_existing_title": "Изменить адрес"
+    },
+    "guest_login": {
+      "title": "Продолжить как гость",
+      "submit": "Продолжать"
+    },
+    "login": {
+      "title": "Авторизоваться",
+      "forgot_password": "Забыли пароль?",
+      "sign_in": "Войти"
+    },
+    "new_customer": {
+      "title": "Новый клиент?",
+      "message": "Зарегистрируйтесь, чтобы воспользоваться функциями отслеживания и истории заказов, а также автоматически заполняемыми формами при оформлении последующих заказов.",
+      "register": "Регистрация"
+    },
+    "order": {
+      "title": "Заказ {{ order_number }}",
+      "date": "Размещено {{ date }}",
+      "cancelled": "Заказ отменен {{ date }}",
+      "cancelled_reason": "Причина: {{ reason }}",
+      "billing_address": "Адрес для выставления счета",
+      "payment_status": "Статус платежа",
+      "shipping_address": "Адрес доставки",
+      "fulfillment_status": "Статус выполнения",
+      "discount": "Скидка ( {{ code }} )",
+      "shipping": "Доставка ( {{ shipping_method }} )",
+      "tax": "Налог ( {{ title }} {{ rate }} %)",
+      "product": "Продукт",
+      "item": "Элемент",
+      "sku": "Артикул",
+      "price": "Цена",
+      "quantity": "Количество"
+    }
+  },
+  "search": {
+    "predictive_search": {
+      "view_all_results": "Поиск по запросу \" {{ terms }} \"",
+      "no_results": "Соответствующих результатов не найдено."
+    }
+  },
+  "onboarding": {
+    "article": {
+      "title": "Название статьи",
+      "author_name": "Имя автора"
+    },
+    "collection": {
+      "title": "Название коллекции"
+    },
+    "featured_collection": {
+      "title": "Коллекция",
+      "subtitle": "Просмотреть все"
+    },
+    "menu_list": {
+      "title": "Список меню",
+      "link_text": "Связь"
+    },
+    "product": {
+      "title": "Название продукта",
+      "vendor": "Поставщик продукции",
+      "by_vendor": "поставщиком продукции"
+    },
+    "page": {
+      "title": "Заголовок страницы"
+    }
   }
 }
