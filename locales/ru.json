@@ -1,0 +1,181 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pxs-newsletter": {
+      "form": {
+        "placeholder": "Адрес электронной почты",
+        "submit": "Подписаться",
+        "success": "Спасибо за подписку!"
+      }
+    },
+    "shoppable-image": {
+      "onboarding": {
+        "product": "Продукт",
+        "tooltip_link": "Посмотреть товар"
+      }
+    },
+    "faq": {
+      "summary": "Хотите узнать что-нибудь ещё?",
+      "content": "Избавьте себя от траты времени и сил на написание одних и тех же писем снова и снова, перечислив здесь наиболее часто задаваемые вопросы и ответы. Специальная страница с часто задаваемыми вопросами поможет удовлетворить основные потребности ваших клиентов, сократит количество писем в службу поддержки, повысит конверсию и создаст более приятный опыт покупок!",
+      "categories": {
+        "view_all": "Просмотреть все",
+        "view_less": "Показать меньше"
+      }
+    },
+    "countdown-timer": {
+      "days": "Дни",
+      "hours": "Часы",
+      "minutes": "Протокол",
+      "seconds": "Секунды"
+    },
+    "complementary_product_block": {
+      "from": "от",
+      "now": "сейчас",
+      "view_details": "Посмотреть товар"
+    }
+  },
+  "404": {
+    "general": {
+      "title": "Страница не найдена",
+      "text": "Страница, которую вы искали, не существует.",
+      "continue_shopping": "Продолжить покупки"
+    }
+  },
+  "product": {
+    "variants": {
+      "choose_variant": "Выберите вариант",
+      "choose_option": "Выберите {{ option }}",
+      "chosen_option_html": "{{ option }} : <span>{{ value }}</span>",
+      "unavailable": "Недоступно"
+    },
+    "general": {
+      "select_variant": "Пожалуйста, выберите вариант.",
+      "by_vendor": "от {{ vendor }}",
+      "by_vendor_html": "Автор: {{ vendor_link }}",
+      "sku_html": "<strong>Артикул</strong> <span data-product-sku>{{ sku }}</span>",
+      "customer_reviews_title": "Отзывы покупателей",
+      "zoom": "Нажмите, чтобы развернуть",
+      "zoomTap": "Нажмите или сделайте жест масштабирования.",
+      "zoomTapMobile": "Нажмите, чтобы увеличить изображение.",
+      "discounts": "Скидки"
+    },
+    "onboarding": {
+      "tab_title": "Описание",
+      "tab_content": "Добавьте описание товара, чтобы поделиться информацией о вашем продукте."
+    },
+    "media": {
+      "view_in_your_space": "Посмотреть в вашем пространстве"
+    },
+    "buttons": {
+      "quick_shop": "Быстрая покупка",
+      "add_to_cart": "Добавить в корзину",
+      "choose_options": "Выберите варианты",
+      "view_details": "Посмотреть подробности",
+      "sold_out": "Распроданный",
+      "unavailable": "Недоступно",
+      "pre_order": "Предварительный заказ"
+    },
+    "status": {
+      "sold_out": "Распроданный",
+      "availability": "Доступность",
+      "in_stock": "{{ inventory_quantity }} в наличии",
+      "in_stock_hidden": "В наличии",
+      "in_stock_verbose": "{{ inventory_quantity }} в наличии, готово к отправке",
+      "in_stock_threshold": "{{ inventory_quantity }} + в наличии",
+      "in_stock_threshold_verbose": "{{ inventory_quantity }} + в наличии, готово к отправке",
+      "low_stock": "Осталось всего {{ inventory_quantity }} !",
+      "low_stock_hidden": "Низкий запас",
+      "no_stock": "Распродано",
+      "incoming_stock": "Продолжение следует!",
+      "pre_order": "Вскоре",
+      "continue_selling": "В наличии"
+    },
+    "color_swatches": {
+      "swatches_count": {
+        "one": "{{ count }} доступных цветов",
+        "other": "{{ count }} доступных цветов"
+      }
+    },
+    "blocks": {
+      "request_quote": {
+        "email": "Электронная почта",
+        "message": "Сообщение",
+        "name": "Имя",
+        "request_message": "Клиент запросил ценовое предложение на {{ product_title }} - {{ product_url }}",
+        "request_message_empty": "Запрос на расчет стоимости",
+        "success": "Спасибо за обращение. Мы свяжемся с вами как можно скорее.",
+        "submit": "Запросить ценовое предложение",
+        "quantity": "Количество"
+      }
+    }
+  },
+  "store_availability": {
+    "general": {
+      "in_stock": "В наличии",
+      "out_of_stock": "Распродано",
+      "view_store_info": "Просмотреть информацию о магазине",
+      "check_other_stores": "Уточните наличие в других магазинах.",
+      "available_for_pick_up_at_html": "Самовывоз возможен по адресу <b>{{ location_name }}</b>",
+      "unavailable_for_pick_up_at_html": "В настоящее время самовывоз недоступен по адресу <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_time_html": "Возможен самовывоз, {{ pick_up_time }}",
+      "unavailable_for_pick_up_at_time_html": "Самовывоз в настоящее время недоступен.",
+      "kilometers": "км",
+      "miles": "ми"
+    }
+  },
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Тележка",
+      "collections": "Коллекции",
+      "page": "Страница {{ page }}",
+      "products": "Продукты",
+      "search": "Поиск",
+      "tags_html": "Отмечено тегом \" {{ tags }} \""
+    }
+  },
+  "product_price": {
+    "price": {
+      "original": "Первоначальная цена",
+      "current": "Текущая цена",
+      "range_html": "<span class=\"price--label\">из</span> {{ price }}"
+    },
+    "badge": {
+      "sale_percentage_range_html": "Сэкономьте до <span data-price-percent-saved>{{ savings }}</span> %",
+      "sale_percentage_single_html": "Сэкономьте <span data-price-percent-saved>{{ savings }}</span> %",
+      "sale_money_range_html": "Сэкономьте до <span class=\"money\" data-price-money-saved>{{ savings }}</span>",
+      "sale_money_single_html": "Сэкономьте <span class=\"money\" data-price-money-saved>{{ savings }}</span>",
+      "sold_out": "Распроданный",
+      "sale": "Распродажа",
+      "pre_order": "Предварительный заказ"
+    }
+  },
+  "general": {
+    "country": {
+      "dropdown_label": "Страна",
+      "submit_button_label": "Обновить страну"
+    },
+    "language": {
+      "dropdown_label": "Язык",
+      "submit_button_label": "Обновить язык"
+    },
+    "back_to_top_button": {
+      "desktop_button_label": "Вершина",
+      "mobile_button_label": "Вернуться наверх"
+    },
+    "breadcrumbs": {
+      "home": "Дом",
+      "collections": "Коллекции"
+    },
+    "general": {
+      "email": "Электронная почта"
+    }
+  }
+}
