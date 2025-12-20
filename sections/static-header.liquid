@@ -199,7 +199,10 @@
 
 
 <div class="site-header-right">
+
   {% render 'site-header-actions' %}
+
+  {% render 'language-switcher' %}
 
   <div class="site-header-cart">
     <a class="site-header-cart--button" href="{{ routes.cart_url }}">
@@ -216,12 +219,12 @@
         {% endif %}
       </span>
 
-      <span class="visually-hidden">
-        {{ 'general.accessibility.cart' | t }}
-      </span>
+      <span class="visually-hidden">{{ 'general.accessibility.cart' | t }}</span>
     </a>
   </div>
+
 </div>
+
 
 
 
