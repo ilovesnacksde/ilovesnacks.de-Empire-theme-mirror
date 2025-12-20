@@ -14,11 +14,11 @@
 
 <div class="lang-switcher">
   {% if request.path contains '/ru' %}
-    <a href="{{ base }}" class="lang-flag">
+    <a href="{{ base }}">
       <img src="{{ 'lang-de.png' | asset_url }}" alt="DE">
     </a>
   {% else %}
-    <a href="{{ base }}/ru" class="lang-flag">
+    <a href="{{ base }}/ru">
       <img src="{{ 'lang-ru.png' | asset_url }}" alt="RU">
     </a>
   {% endif %}
