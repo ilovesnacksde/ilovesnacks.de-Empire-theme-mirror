@@ -199,6 +199,18 @@
     <div class="site-header-right">
       {% render 'site-header-actions' %}
 
+      <div class="site-header-lang">
+  {% if request.locale.iso_code == 'ru' %}
+    <a href="/localization?locale=de" aria-label="Deutsch">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
+    </a>
+  {% else %}
+    <a href="/localization?locale=ru" aria-label="Русский">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
+    </a>
+  {% endif %}
+</div>
+
       {% render 'language-switcher' %}
 
       <div class="site-header-cart">
