@@ -1,23 +1,17 @@
 {% if localization.available_languages.size > 1 %}
-  <form method="post" action="{{ routes.localization_url }}">
-    <input type="hidden" name="form_type" value="localization">
-    <input type="hidden" name="utf8" value="✓">
-
-    <div class="language-switcher">
-      {% for language in localization.available_languages %}
-        <button
-          type="submit"
-          name="locale_code"
-          value="{{ language.iso_code }}"
-          {% if language.iso_code == localization.language.iso_code %}aria-current="true"{% endif %}
+  <div class="lang-switcher">
+    {% for lang in localization.available_languages %}
+      {% if lang.iso_code == localization.language.iso_code %}
+        <span class="lang active">{{ lang.iso_code | upcase }}</span>
+      {% else %}
+        <a
+          class="lang"
+          href="{{ lang.root_url }}"
+          aria-label="Switch language to {{ lang.name }}"
         >
-          {% if language.iso_code == 'de' %}🇩🇪 DE{% endif %}
-          {% if language.iso_code == 'ru' %}🇷🇺 RU{% endif %}
-          {% if language.iso_code == 'lv' %}🇱🇻 LV{% endif %}
-          {% if language.iso_code == 'lt' %}🇱🇹 LT{% endif %}
-          {% if language.iso_code == 'et' %}🇪🇪 ET{% endif %}
-        </button>
-      {% endfor %}
-    </div>
-  </form>
+          {{ lang.iso_code | upcase }}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 {% endif %}
