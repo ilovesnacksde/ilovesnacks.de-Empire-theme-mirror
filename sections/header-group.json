@@ -68,19 +68,18 @@
     },
     "utility-bar": {
       "type": "static-utility-bar",
-      "disabled": true,
       "settings": {
-        "use_full_width": false,
+        "use_full_width": true,
         "background_color": "#ffffff",
         "link_color": "#1d1d1d",
         "link_hover_color": "#046e82",
         "border_color": "#dddddd",
         "menu": "footer",
-        "show_menu_mobile": false,
-        "mobile_layout": "below",
+        "show_menu_mobile": true,
+        "mobile_layout": "above",
         "show_locale_selector": true,
         "show_currency_selector": false,
-        "show_social_icons": true
+        "show_social_icons": false
       }
     }
   },
