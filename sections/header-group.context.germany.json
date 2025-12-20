@@ -15,7 +15,7 @@
         "use_full_width": true,
         "menu": "footer",
         "show_menu_mobile": true,
-        "mobile_layout": "above",
+        "mobile_layout": "below",
         "show_social_icons": false
       },
       "blocks": {}
