@@ -1,21 +1,25 @@
-<!-- LANG SWITCHER RENDERED -->
+{% assign host = request.host %}
 
-{% if localization.available_languages.size > 1 %}
-  {% form 'localization', class: 'lang-switcher' %}
-    {% for language in localization.available_languages %}
-      <button
-        type="submit"
-        name="locale_code"
-        value="{{ language.iso_code }}"
-        class="lang-btn {% if language.iso_code == localization.language.iso_code %}active{% endif %}"
-        aria-label="{{ language.name }}"
-      >
-        {% if language.iso_code == 'ru' %}🇷🇺{% endif %}
-        {% if language.iso_code == 'de' %}🇩🇪{% endif %}
-        {% if language.iso_code == 'lv' %}🇱🇻{% endif %}
-        {% if language.iso_code == 'lt' %}🇱🇹{% endif %}
-        {% if language.iso_code == 'et' %}🇪🇪{% endif %}
-      </button>
-    {% endfor %}
-  {% endform %}
+{% if host contains '.de' %}
+  {% assign base = 'https://ilovesnacks.de' %}
+{% elsif host contains '.lv' %}
+  {% assign base = 'https://ilovesnacks.lv' %}
+{% elsif host contains '.lt' %}
+  {% assign base = 'https://ilovesnacks.lt' %}
+{% elsif host contains '.ee' %}
+  {% assign base = 'https://ilovesnacks.ee' %}
+{% else %}
+  {% assign base = 'https://ilovesnacks.de' %}
 {% endif %}
+
+<div class="lang-switcher">
+  {% if request.path contains '/ru' %}
+    <a href="{{ base }}" class="lang-flag">
+      <img src="{{ 'lang-de.png' | asset_url }}" alt="DE">
+    </a>
+  {% else %}
+    <a href="{{ base }}/ru" class="lang-flag">
+      <img src="{{ 'lang-ru.png' | asset_url }}" alt="RU">
+    </a>
+  {% endif %}
+</div>
