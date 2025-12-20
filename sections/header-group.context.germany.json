@@ -12,11 +12,11 @@
     "utility-bar": {
       "disabled": false,
       "settings": {
-        "menu": "",
-        "mobile_layout": "above",
-        "show_social_icons": false,
+        "use_full_width": true,
+        "menu": "footer",
         "show_menu_mobile": true,
-        "use_full_width": true
+        "mobile_layout": "above",
+        "show_social_icons": false
       },
       "blocks": {}
     }
