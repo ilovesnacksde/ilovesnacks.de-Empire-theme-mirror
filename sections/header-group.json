@@ -1,1 +1,92 @@
-{"type":"header","name":"Header","sections":{"announcement-bar":{"type":"static-announcement","settings":{"show_announcement":true,"homepage_announcement":false,"announcement_text":"🚚 Kostenloser Versand in ganz Deutschland ab €60","announcement_text_mobile":"🚚 Kostenloser Versand in ganz Deutschland ab €60","announcement_link":"shopify:\/\/pages\/versand","announcement_color":"#ffffff","announcement_background":"#c60404"}},"header":{"type":"static-header","blocks":{"1517255946962":{"type":"meganav_images","settings":{"meganav_trigger":"Shop","text_1":"Get 15% with code \"COOK15\"","link_1":"","position_1":"last","size_1":"medium","text_2":"Browse our new bed & bath arrivals","link_2":"","position_2":"last","size_2":"medium"}}},"block_order":["1517255946962"],"settings":{"sticky_header":true,"full_width_header":true,"logo":"shopify:\/\/shop_images\/ilovesnacks-logo-_horizontal_with_heart-1500px.png","logo_height":40,"logo_width":200,"filter_search_by":"product_type","enable_live_search":true,"show_mobile_search_bar":true,"enable_live_search_images":true,"quick_links":"","menu":"main-menu","secondary_menu":"","small_promo_heading":"Support über WhatsApp","small_promo_text":"","small_promo_text_mobile":"","small_promo_link":"https:\/\/wa.me\/4915758340007","small_promo_icon":"icon-chat","image":"shopify:\/\/shop_images\/i_love_snacks_-_Whatsapp_icon_8b9d6785-642b-4156-9a62-6b3a330dea14.png","cart_icon":"icon-cart"}},"utility-bar":{"type":"static-utility-bar","disabled":true,"settings":{"use_full_width":false,"background_color":"#ffffff","link_color":"#1d1d1d","link_hover_color":"#046e82","border_color":"#dddddd","menu":"footer","show_menu_mobile":false,"mobile_layout":"below","show_locale_selector":false,"show_currency_selector":false,"show_social_icons":true}}},"order":["announcement-bar","header","utility-bar"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement-bar": {
+      "type": "static-announcement",
+      "settings": {
+        "show_announcement": true,
+        "homepage_announcement": false,
+        "announcement_text": "🚚 Kostenloser Versand in ganz Deutschland ab €60",
+        "announcement_text_mobile": "🚚 Kostenloser Versand in ganz Deutschland ab €60",
+        "announcement_link": "shopify://pages/versand",
+        "announcement_color": "#ffffff",
+        "announcement_background": "#c60404"
+      }
+    },
+    "header": {
+      "type": "static-header",
+      "blocks": {
+        "1517255946962": {
+          "type": "meganav_images",
+          "settings": {
+            "meganav_trigger": "Shop",
+            "text_1": "Get 15% with code \"COOK15\"",
+            "link_1": "",
+            "position_1": "last",
+            "size_1": "medium",
+            "text_2": "Browse our new bed & bath arrivals",
+            "link_2": "",
+            "position_2": "last",
+            "size_2": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "1517255946962"
+      ],
+      "settings": {
+        "sticky_header": true,
+        "full_width_header": true,
+        "logo": "shopify://shop_images/ilovesnacks-logo-_horizontal_with_heart-1500px.png",
+        "logo_height": 40,
+        "logo_width": 200,
+        "filter_search_by": "product_type",
+        "enable_live_search": true,
+        "show_mobile_search_bar": true,
+        "enable_live_search_images": true,
+        "quick_links": "",
+        "menu": "main-menu",
+        "secondary_menu": "",
+        "small_promo_heading": "Support über WhatsApp",
+        "small_promo_text": "",
+        "small_promo_text_mobile": "",
+        "small_promo_link": "https://wa.me/4915758340007",
+        "small_promo_icon": "icon-chat",
+        "image": "shopify://shop_images/i_love_snacks_-_Whatsapp_icon_8b9d6785-642b-4156-9a62-6b3a330dea14.png",
+        "cart_icon": "icon-cart"
+      }
+    },
+    "utility-bar": {
+      "type": "static-utility-bar",
+      "disabled": true,
+      "settings": {
+        "use_full_width": false,
+        "background_color": "#ffffff",
+        "link_color": "#1d1d1d",
+        "link_hover_color": "#046e82",
+        "border_color": "#dddddd",
+        "menu": "footer",
+        "show_menu_mobile": false,
+        "mobile_layout": "below",
+        "show_locale_selector": true,
+        "show_currency_selector": false,
+        "show_social_icons": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "utility-bar"
+  ]
+}
