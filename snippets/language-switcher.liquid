@@ -1,5 +1,8 @@
 {% assign host = request.host %}
 
+{% comment %}
+Определяем базовый домен БЕЗ языка
+{% endcomment %}
 {% if host contains '.de' %}
   {% assign base = 'https://ilovesnacks.de' %}
 {% elsif host contains '.lv' %}
@@ -12,14 +15,26 @@
   {% assign base = 'https://ilovesnacks.de' %}
 {% endif %}
 
-<li class="site-header-actions__language">
+<div class="site-header-lang">
   {% if request.path contains '/ru' %}
     <a href="{{ base }}">
-      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
     </a>
   {% else %}
     <a href="{{ base }}/ru">
-      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
+      <img src="
+        {% if host contains '.de' %}
+          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164
+        {% elsif host contains '.lv' %}
+          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-lv.png?v=1766262164
+        {% elsif host contains '.lt' %}
+          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-lt.png?v=1766262165
+        {% elsif host contains '.ee' %}
+          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ee.png?v=1766262164
+        {% else %}
+          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-en.png?v=1766262164
+        {% endif %}
+      " alt="LANG">
     </a>
   {% endif %}
-</li>
+</div>
