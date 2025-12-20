@@ -3,17 +3,20 @@
 
 
 <li class="site-header-actions__language">
-  <form method="post" action="/localization">
+  {% form 'localization' %}
     <input type="hidden" name="locale_code" value="{% if request.locale.iso_code == 'ru' %}de{% else %}ru{% endif %}">
-    <button type="submit" style="background:none;border:0;cursor:pointer;font-weight:600;">
+    <input type="hidden" name="return_to" value="{{ request.path }}">
+
+    <button type="submit" class="lang-pill" aria-label="Switch language">
       {% if request.locale.iso_code == 'ru' %}
         DE
       {% else %}
         RU
       {% endif %}
     </button>
-  </form>
+  {% endform %}
 </li>
+
 
 
 
