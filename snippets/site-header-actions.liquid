@@ -1,8 +1,20 @@
 <ul class="site-header-actions" data-header-actions>
 
-  <li class="site-header-actions__language">
-    {% render 'language-switcher' %}
-  </li>
+
+  
+<li class="site-header-actions__language">
+  <a
+    href="{{ request.path | replace_first: request.locale.root_url, localization.available_languages[1].root_url }}"
+    style="font-weight:600; text-decoration:none;"
+  >
+    {% if request.locale.iso_code == 'de' %}
+      RU
+    {% else %}
+      DE
+    {% endif %}
+  </a>
+</li>
+
 
 
   {% if shop.customer_accounts_enabled %}
