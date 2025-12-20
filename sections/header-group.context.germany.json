@@ -10,7 +10,7 @@
 {
   "sections": {
     "utility-bar": {
-      "disabled": false,
+      "disabled": true,
       "settings": {
         "use_full_width": true,
         "menu": "footer",
@@ -19,6 +19,12 @@
         "show_social_icons": false
       },
       "blocks": {}
+    },
+    "header": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {},
+      "block_order": []
     }
   },
   "context": {
