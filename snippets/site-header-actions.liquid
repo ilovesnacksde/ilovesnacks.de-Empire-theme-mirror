@@ -2,16 +2,19 @@
 
 
 
-<form method="post" action="{{ routes.localize_url }}">
-  <input type="hidden" name="locale_code" value="{% if request.locale.iso_code == 'de' %}ru{% else %}de{% endif %}">
-  <button type="submit" style="background:none;border:0;font-weight:600;cursor:pointer;">
-    {% if request.locale.iso_code == 'de' %}
-      RU
-    {% else %}
-      DE
-    {% endif %}
-  </button>
-</form>
+<li class="site-header-actions__language">
+  <form method="post" action="/localization">
+    <input type="hidden" name="locale_code" value="{% if request.locale.iso_code == 'ru' %}de{% else %}ru{% endif %}">
+    <button type="submit" style="background:none;border:0;cursor:pointer;font-weight:600;">
+      {% if request.locale.iso_code == 'ru' %}
+        DE
+      {% else %}
+        RU
+      {% endif %}
+    </button>
+  </form>
+</li>
+
 
 
 
