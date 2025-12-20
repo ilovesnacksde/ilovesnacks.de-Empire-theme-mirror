@@ -12,20 +12,14 @@
   {% assign base = 'https://ilovesnacks.de' %}
 {% endif %}
 
-<div class="site-header-lang">
+<li class="site-header-actions__language">
   {% if request.path contains '/ru' %}
     <a href="{{ base }}">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164"
-        alt="DE"
-      >
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
     </a>
   {% else %}
     <a href="{{ base }}/ru">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164"
-        alt="RU"
-      >
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
     </a>
   {% endif %}
-</div>
+</li>
