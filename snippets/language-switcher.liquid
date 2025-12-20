@@ -1,7 +1,7 @@
 {% assign host = request.host %}
 
 {% comment %}
-Определяем базовый домен БЕЗ языка
+Определяем базовый домен БЕЗ /ru
 {% endcomment %}
 {% if host contains '.de' %}
   {% assign base = 'https://ilovesnacks.de' %}
@@ -17,24 +17,12 @@
 
 <div class="site-header-lang">
   {% if request.path contains '/ru' %}
-    <a href="{{ base }}">
+    <a href="{{ base }}" aria-label="Switch to local language">
       <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
     </a>
   {% else %}
-    <a href="{{ base }}/ru">
-      <img src="
-        {% if host contains '.de' %}
-          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164
-        {% elsif host contains '.lv' %}
-          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-lv.png?v=1766262164
-        {% elsif host contains '.lt' %}
-          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-lt.png?v=1766262165
-        {% elsif host contains '.ee' %}
-          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ee.png?v=1766262164
-        {% else %}
-          https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-en.png?v=1766262164
-        {% endif %}
-      " alt="LANG">
+    <a href="{{ base }}/ru" aria-label="Switch to Russian">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
     </a>
   {% endif %}
 </div>
