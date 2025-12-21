@@ -22435,6 +22435,10 @@ body:not(.user-is-tabbing) .rte .tabs .grouped-content-trigger {
 
 
 
+/* ===============================
+   HEADER LANGUAGE SWITCHER
+   =============================== */
+
 .site-header-lang {
   display: flex;
   align-items: center;
@@ -22445,4 +22449,13 @@ body:not(.user-is-tabbing) .rte .tabs .grouped-content-trigger {
   width: 26px;
   height: auto;
   display: block;
+  cursor: pointer;
 }
+
+/* ===============================
+   SAFETY: ничего не ломаем в меню
+   =============================== */
+
+/* НИКАКИХ правок site-navigation */
+/* НИКАКИХ правок site-header-main */
+/* НИКАКИХ правок flex / width / wrap */
