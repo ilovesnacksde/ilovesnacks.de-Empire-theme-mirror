@@ -1,42 +1,28 @@
-<ul class="site-header-actions" data-header-actions>
+<div class="site-header-right">
 
-  <li class="site-header-actions__lang">
+  {% render 'site-header-actions' %}
+
+  <div class="site-header-lang">
     {% render 'language-switcher' %}
-  </li>
+  </div>
 
-  {% if shop.customer_accounts_enabled %}
-    {% unless customer %}
-      <li class="site-header-actions__account-link">
-        <a
-          class="site-header_account-link-anchor"
-          href="{{ routes.account_login_url }}"
-        >
-          <span class="site-header__account-icon">
-            {% render 'icon-library', id: 'icon-account' %}
-          </span>
-        </a>
-      </li>
-    {% else %}
-      <li class="site-header-actions__account-link">
-        <span class="site-header__account-icon">
-          {% render 'icon-library', id: 'icon-account' %}
-        </span>
-        <span class="site-header__account-links">
-          <a
-            class="site-header__account-link--account"
-            href="{{ routes.account_url }}"
-          >
-            {{ 'header.account.title' | t }}
-          </a>
-          <a
-            class="site-header__account-link--logout"
-            href="{{ routes.account_logout_url }}"
-          >
-            {{ 'header.account.logout' | t }}
-          </a>
-        </span>
-      </li>
-    {% endunless %}
-  {% endif %}
+  <div class="site-header-cart">
+    <a class="site-header-cart--button" href="{{ routes.cart_url }}">
+      <span
+        class="site-header-cart--count {% if cart.item_count > 0 %}visible{% endif %}"
+        data-header-cart-count="{% if cart.item_count > 0 %}{{ cart.item_count }}{% endif %}">
+      </span>
 
-</ul>
+      <span class="site-header-cart-icon site-header-cart-icon--svg">
+        {% if section.settings.cart_icon == 'icon-bag' %}
+          {% render 'icon-library', id: 'icon-bag' %}
+        {% else %}
+          {% render 'icon-library', id: 'icon-cart' %}
+        {% endif %}
+      </span>
+
+      <span class="visually-hidden">{{ 'general.accessibility.cart' | t }}</span>
+    </a>
+  </div>
+
+</div>
