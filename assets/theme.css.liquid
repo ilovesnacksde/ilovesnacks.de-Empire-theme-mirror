@@ -22432,42 +22432,32 @@ body:not(.user-is-tabbing) .rte .tabs .grouped-content-trigger {
 
 
 
+
+
+
+
+/* ================================
+   LANGUAGE SWITCHER (SAFE)
+   ================================ */
+
 .site-header-lang {
   display: flex;
   align-items: center;
-  margin-right: 12px;
+  margin: 0 10px;
 }
 
 .site-header-lang img {
   width: 26px;
   height: auto;
   display: block;
-}
-/* === FIX header menu breaking on scroll === */
-.site-navigation-wrapper {
-  width: 100%;
-  flex: 0 0 100%;
+  cursor: pointer;
 }
 
-.site-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+/* ================================
+   HEADER / MENU — НИЧЕГО НЕ ЛОМАЕМ
+   ================================ */
 
-.site-navigation > ul {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+/* ВАЖНО: НИЧЕГО не переопределяем у navigation и header */
+/* НИКАКИХ flex / width / wrap / stretch */
 
-/* не даём хедеру ужимать меню */
-.site-header-main {
-  align-items: stretch;
-}
-.site-header-actions__lang img {
-  width: 26px;
-  height: auto;
-  display: block;
-}
+/* Конец */
