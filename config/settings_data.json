@@ -83,7 +83,7 @@
     "favicon": "shopify://shop_images/ilovesnacks-logo-favicon-32px.png",
     "enable_orders_atc": true,
     "enable_checkout_lock_icon": true,
-    "enable_free_shipping_bar": true,
+    "enable_free_shipping_bar": false,
     "free_shipping_minimum_amount": "60",
     "continue_shopping_url": "shopify://collections/all",
     "continue_url_cart": true,
