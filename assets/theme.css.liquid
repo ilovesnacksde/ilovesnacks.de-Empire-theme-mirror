@@ -22440,3 +22440,26 @@ body:not(.user-is-tabbing) .rte .tabs .grouped-content-trigger {
   height: auto;
   display: block;
 }
+/* === FIX header menu breaking on scroll === */
+.site-navigation-wrapper {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-navigation > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* не даём хедеру ужимать меню */
+.site-header-main {
+  align-items: stretch;
+}
