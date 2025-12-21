@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "header": {
+      "disabled": false,
+      "settings": {
+        "small_promo_heading": "Support"
+      },
+      "blocks": {},
+      "block_order": []
+    },
     "utility-bar": {
       "disabled": true,
       "settings": {
@@ -19,12 +27,6 @@
         "show_social_icons": false
       },
       "blocks": {}
-    },
-    "header": {
-      "disabled": false,
-      "settings": {},
-      "blocks": {},
-      "block_order": []
     }
   },
   "context": {
