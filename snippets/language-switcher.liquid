@@ -13,13 +13,15 @@
   {% assign base = 'https://ilovesnacks.de' %}
 {% endif %}
 
+{% comment %} если на /ru — показываем DE (вернуться на локальный), иначе показываем RU {% endcomment %}
+
 <div class="site-header-lang">
   {% if path contains '/ru' %}
-    <a href="{{ base }}">
+    <a href="{{ base }}" aria-label="Deutsch">
       <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
     </a>
   {% else %}
-    <a href="{{ base }}/ru">
+    <a href="{{ base }}/ru" aria-label="Русский">
       <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
     </a>
   {% endif %}
