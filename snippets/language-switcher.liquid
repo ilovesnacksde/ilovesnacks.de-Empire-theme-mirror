@@ -1,0 +1,26 @@
+{% assign host = request.host %}
+{% assign path = request.path %}
+
+{% if host contains '.de' %}
+  {% assign base = 'https://ilovesnacks.de' %}
+{% elsif host contains '.lv' %}
+  {% assign base = 'https://ilovesnacks.lv' %}
+{% elsif host contains '.lt' %}
+  {% assign base = 'https://ilovesnacks.lt' %}
+{% elsif host contains '.ee' %}
+  {% assign base = 'https://ilovesnacks.ee' %}
+{% else %}
+  {% assign base = 'https://ilovesnacks.de' %}
+{% endif %}
+
+<div class="site-header-lang">
+  {% if path contains '/ru' %}
+    <a href="{{ base }}">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
+    </a>
+  {% else %}
+    <a href="{{ base }}/ru">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
+    </a>
+  {% endif %}
+</div>
