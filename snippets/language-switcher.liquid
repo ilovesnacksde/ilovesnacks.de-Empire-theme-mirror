@@ -1,26 +1,23 @@
-{% assign host = request.host %}
-{% assign path = request.path %}
-
-{% if host contains '.de' %}
-  {% assign base = 'https://ilovesnacks.de' %}
-{% elsif host contains '.lv' %}
-  {% assign base = 'https://ilovesnacks.lv' %}
-{% elsif host contains '.lt' %}
-  {% assign base = 'https://ilovesnacks.lt' %}
-{% elsif host contains '.ee' %}
-  {% assign base = 'https://ilovesnacks.ee' %}
-{% else %}
-  {% assign base = 'https://ilovesnacks.de' %}
+{% assign is_ru = false %}
+{% if request.path contains '/ru' %}
+  {% assign is_ru = true %}
 {% endif %}
 
-<div class="site-header-lang">
-  {% if path contains '/ru' %}
-    <a href="{{ base }}">
-      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
-    </a>
-  {% else %}
-    <a href="{{ base }}/ru">
-      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
-    </a>
+{% if is_ru %}
+  {% assign target_path = request.path | remove_first: '/ru' %}
+  {% if target_path == '' %}
+    {% assign target_path = '/' %}
   {% endif %}
-</div>
+  <a class="site-header-lang" href="{{ target_path }}" aria-label="Switch to German">
+    <img src="https://flagcdn.com/w40/de.png" alt="DE">
+  </a>
+{% else %}
+  {% if request.path == '/' %}
+    {% assign target_path = '/ru' %}
+  {% else %}
+    {% assign target_path = '/ru' | append: request.path %}
+  {% endif %}
+  <a class="site-header-lang" href="{{ target_path }}" aria-label="Switch to Russian">
+    <img src="https://flagcdn.com/w40/ru.png" alt="RU">
+  </a>
+{% endif %}
