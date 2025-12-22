@@ -12,7 +12,9 @@
     "header": {
       "disabled": false,
       "settings": {
-        "small_promo_heading": "Support"
+        "small_promo_heading": "Support",
+        "cart_icon": "icon-cart",
+        "logo_width": 150
       },
       "blocks": {},
       "block_order": []
