@@ -22434,16 +22434,46 @@ body:not(.user-is-tabbing) .rte .tabs .grouped-content-trigger {
 
 
 
-/* === CUSTOM: language icon in header === */
-.site-header-lang {
+
+
+
+
+/* === Header navigation layout hard fix (desktop) === */
+
+.site-header-main {
   display: flex;
-  align-items: center;
-  margin-right: 12px;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-.site-header-lang img {
-  width: 26px;
-  height: auto;
-  display: block;
-  cursor: pointer;
+.site-header-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation-wrapper {
+  width: 100%;
+  flex: 0 0 100%;
+  order: 2;
+}
+
+.site-navigation {
+  width: 100%;
+}
+
+.site-navigation > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+[data-site-header-sticky] .site-navigation-wrapper {
+  position: static !important;
+}
+
+.site-header-menu-toggle {
+  position: relative;
+  z-index: 50;
 }
