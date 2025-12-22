@@ -1,1 +1,28 @@
-{% comment %} Language / Country switcher с флагами, без ошибок {% endcomment %} {%- assign current_host = request.host | downcase -%} {%- assign base = 'ilovesnacks' -%} {%- assign tld = current_host | remove_first: base -%} {%- if tld == '' -%} {%- assign tld = '.de' -%} {%- endif -%} {%- if tld contains 'ru' -%} {%- assign tld = '.de' -%} {%- endif -%} <div class=lang-select style=margin: 0 8px> <img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-{{ tld | remove: '.' }}.png?v=1766262164 width=20 height=14 alt={{ tld | remove: '.' | upcase }} style=cursor: pointer; border-radius: 1px; onclick=toggleLang() /> <div id=lang-menu style=position:absolute; top:32px; left:-5px; background:#fff; border:1px solid #ddd; padding:8px 4px; display:none; flex-wrap:wrap; max-width:100px; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:100;> <a href={{ base }}.de{{ request.path }}><img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164 width=16 height=11 alt=DE style=margin:2px;> <a href={{ base }}.lv{{ request.path }}><img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-lv.png?v=1766262164 width=16 height=11 alt=LV style=margin:2px;> <a href={{ base }}.lt{{ request.path }}><img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-lt.png?v=1766262165 width=16 height=11 alt=LT style=margin:2px;> <a href={{ base }}.ee{{ request.path }}><img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ee.png?v=1766262164 width=16 height=11 alt=EE style=margin:2px;> <a href={{ base }}.en{{ request.path }}><img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-en.png?v=1766262164 width=16 height=11 alt=EN style=margin:2px;> <a href={{ base }}.ru/ru{{ request.path }}><img src=https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164 width=16 height=11 alt=RU style=margin:2px;>   <style> #lang-menu { transition: opacity 0.2s; } #lang-menu a { display:block; } </style> <script> function toggleLang() { let menu = document.getElementById(lang-menu); menu.style.display = menu.style.display === none ? flex : none; } document.addEventListener(click, e => { if (!e.target.closest(.lang-select)) document.getElementById(How can Grok help?
+{% assign host = request.host %}
+{% assign path = request.path %}
+
+{% if host contains '.de' %}
+  {% assign base = 'https://ilovesnacks.de' %}
+{% elsif host contains '.lv' %}
+  {% assign base = 'https://ilovesnacks.lv' %}
+{% elsif host contains '.lt' %}
+  {% assign base = 'https://ilovesnacks.lt' %}
+{% elsif host contains '.ee' %}
+  {% assign base = 'https://ilovesnacks.ee' %}
+{% else %}
+  {% assign base = 'https://ilovesnacks.de' %}
+{% endif %}
+
+{% comment %} если на /ru — показываем DE (вернуться на локальный), иначе показываем RU {% endcomment %}
+
+<div class="site-header-lang">
+  {% if path contains '/ru' %}
+    <a href="{{ base }}" aria-label="Deutsch">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-de.png?v=1766262164" alt="DE">
+    </a>
+  {% else %}
+    <a href="{{ base }}/ru" aria-label="Русский">
+      <img src="https://cdn.shopify.com/s/files/1/0963/6380/7052/files/lang-ru.png?v=1766262164" alt="RU">
+    </a>
+  {% endif %}
+</div>
