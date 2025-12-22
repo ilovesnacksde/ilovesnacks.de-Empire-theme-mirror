@@ -2,7 +2,10 @@
   {% if shop.customer_accounts_enabled %}
     {% unless customer %}
       <li class="site-header-actions__account-link">
-        <a class="site-header_account-link-anchor" href="{{ routes.account_login_url }}">
+        <a
+          class="site-header_account-link-anchor"
+          href="{{ routes.account_login_url }}"
+        >
           <span class="site-header__account-icon">
             {% render 'icon-library', id: 'icon-account' %}
           </span>
@@ -10,11 +13,21 @@
       </li>
     {% else %}
       <li class="site-header-actions__account-link">
-        <a class="site-header_account-link-anchor" href="{{ routes.account_url }}">
-          <span class="site-header__account-icon">
-            {% render 'icon-library', id: 'icon-account' %}
-          </span>
-        </a>
+        <span class="site-header__account-icon">
+          {% render 'icon-library', id: 'icon-account' %}
+        </span>
+        <span class="site-header__account-links">
+          <a
+            class="site-header__account-link--account"
+            href="{{ routes.account_url }}"
+          ></a>
+
+          <a
+            class="site-header__account-link--logout"
+            href="{{ routes.account_logout_url }}"
+            data-no-instant
+          ></a>
+        </span>
       </li>
     {% endunless %}
   {% endif %}
