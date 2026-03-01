@@ -171,3 +171,9 @@ a.product_link_cus {
   outline: none !important;
   box-shadow: none !important;
 }
+/* Hide language flag inside mobile navigation drawer */
+.site-mobile-nav .site-header-actions__language,
+.site-mobile-nav-drawer .site-header-actions__language,
+.site-header-nav .site-header-actions__language {
+  display: none !important;
+}
