@@ -150,3 +150,24 @@ a.product_link_cus {
     display: none;
   }
 }
+/* Flag - no рамка, no скругление, no focus box */
+.lang-flag-toggle,
+.lang-flag-toggle__form,
+.lang-flag-toggle__btn,
+.lang-flag-toggle__img {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.lang-flag-toggle__img {
+  border-radius: 0 !important;
+  display: block;
+}
+
+.lang-flag-toggle__btn:focus,
+.lang-flag-toggle__btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
