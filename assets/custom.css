@@ -117,3 +117,36 @@ div#ld-grid {
 a.product_link_cus {
     cursor: pointer;
 }
+/* Language flag positioning */
+
+.site-header-actions__language {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+@media (max-width: 719px) {
+  /* hide desktop flag on mobile */
+  .site-header-actions__language {
+    display: none;
+  }
+
+  /* show mobile flag */
+  .header-lang-flag--mobile {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .site-header-right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 720px) {
+  /* hide mobile flag on desktop */
+  .header-lang-flag--mobile {
+    display: none;
+  }
+}
