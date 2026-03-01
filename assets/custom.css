@@ -177,3 +177,18 @@ a.product_link_cus {
 .site-header-nav .site-header-actions__language {
   display: none !important;
 }
+@media (min-width: 720px) {
+  .header-lang-flag--mobile { display: none !important; }
+}
+
+@media (max-width: 719px) {
+  .header-lang-flag--mobile {
+    display: inline-flex !important;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .site-header-right {
+    display: flex;
+    align-items: center;
+  }
+}
