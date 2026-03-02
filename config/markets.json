@@ -12,7 +12,7 @@
     "germany": {
       "parent": "@default"
     },
-    "great-britain": {
+    "united-kingdom": {
       "parent": "@default"
     }
   }
