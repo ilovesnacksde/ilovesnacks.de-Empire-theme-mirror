@@ -547,7 +547,8 @@
       ".lang-flag-toggle__btn {padding: 0 !important; cursor: pointer !important;}",
       ".lang-flag-toggle__img {display: block !important; border-radius: 0 !important;}",
       "/* Pointer cursor for language switcher */.site-header-actions__language a,.site-header-actions__language button,.site-header-actions__language input,.site-header-actions__language label {cursor: pointer !important;}",
-      "/* Mobile layout */@media (max-width: 719px) {.site-header-right {display: flex !important; align-items: center !important; flex-wrap: nowrap !important; } .site-header-actions {display: inline-flex !important; align-items: center !important; gap: 10px; } .site-header-actions__language {display: inline-flex !important; align-items: center !important; } /* Hide duplicated account icon in header actions */ .site-header-actions__account-link, .site-header-actions__account-link * {display: none !important; }}"
+      "/* Desktop: keep existing behavior */@media (min-width: 720px) {.header-lang-flag--mobile {display: none !important; }}",
+      "/* Mobile: show the mobile flag block in the header row */@media (max-width: 719px) {.header-lang-flag--mobile {display: inline-flex !important; align-items: center !important; margin-right: 10px !important; } .site-header-right {display: flex !important; align-items: center !important; flex-wrap: nowrap !important; }}"
     ]
   }
 }
