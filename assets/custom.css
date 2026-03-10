@@ -198,3 +198,28 @@ a.product_link_cus {
     display: none !important;
   }
 }
+@media (max-width: 719px) {
+  .header-lang-flag--mobile {
+    display: inline-flex !important;
+    align-items: center !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .site-header-main-content {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .site-header-actions__language {
+    display: none !important;
+  }
+}
+
+@media (min-width: 720px) {
+  .header-lang-flag--mobile {
+    display: none !important;
+  }
+}
