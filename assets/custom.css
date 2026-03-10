@@ -31,7 +31,7 @@
     width: 100% !important;
   }
 
-  /* Force sticky header on mobile (all pages) */
+  /* Force sticky header on mobile */
   .site-header {
     position: sticky !important;
     top: 0;
@@ -124,17 +124,8 @@ a.product_link_cus {
   cursor: pointer;
 }
 
-/* ===========================
-   Language switcher flags
-   =========================== */
+/* Language switcher */
 
-.site-header-actions__language {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-/* Remove any рамки/скругления/обводки вокруг флага */
 .lang-flag-toggle,
 .lang-flag-toggle__form,
 .lang-flag-toggle__btn,
@@ -145,13 +136,14 @@ a.product_link_cus {
   outline: none !important;
 }
 
-.lang-flag-toggle__img {
-  border-radius: 0 !important;
-  display: block;
-}
-
 .lang-flag-toggle__btn {
   padding: 0 !important;
+  cursor: pointer !important;
+}
+
+.lang-flag-toggle__img {
+  display: block !important;
+  border-radius: 0 !important;
 }
 
 .lang-flag-toggle__btn:focus,
@@ -160,43 +152,49 @@ a.product_link_cus {
   box-shadow: none !important;
 }
 
-/* Do not show the desktop-flag inside the burger menu / drawer */
+/* Do not show the header language item inside drawer/navigation clones */
 .site-mobile-nav .site-header-actions__language,
 .site-mobile-nav-drawer .site-header-actions__language,
 .site-header-nav .site-header-actions__language {
   display: none !important;
 }
 
-/* Breakpoint fix: show mobile flag up to 1024px */
-@media (max-width: 1024px) {
-  /* show only mobile flag */
-  .header-lang-flag--mobile {
-    display: inline-flex !important;
-    align-items: center;
-    margin-right: 10px;
-  }
-
-  /* hide desktop flag on mobile */
+/* Desktop */
+@media (min-width: 720px) {
   .site-header-actions__language {
-    display: none !important;
-  }
-
-  .site-header-right {
-    display: flex;
-    align-items: center;
+    display: inline-flex !important;
+    align-items: center !important;
+    margin-right: 10px !important;
   }
 }
 
-@media (min-width: 1025px) {
-  /* hide mobile flag on desktop */
-  .header-lang-flag--mobile {
-    display: none !important;
+/* Mobile */
+@media (max-width: 719px) {
+  .site-header-main {
+    position: relative !important;
   }
 
-  /* show desktop flag */
-  .site-header-actions__language {
+  .site-header-right {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+
+  /* Show language flag in the top row between logo and cart */
+  .site-header-main .site-header-actions__language {
     display: inline-flex !important;
-    align-items: center;
-    margin-right: 10px;
+    align-items: center !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: 56px !important;
+    transform: translateY(-50%) !important;
+    z-index: 30 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Keep account icon only in burger menu, not in the top row */
+  .site-header-main .site-header-actions__account-link {
+    display: none !important;
   }
 }
