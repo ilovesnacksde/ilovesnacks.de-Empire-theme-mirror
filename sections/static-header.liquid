@@ -198,7 +198,9 @@
 
     <div class="site-header-right">
       {% render 'site-header-actions' %}
-
+<div class="header-lang-flag header-lang-flag--mobile">
+  {% render 'language-switcher' %}
+</div>
       <div class="site-header-cart">
         <a class="site-header-cart--button" href="{{ routes.cart_url }}">
           <span
