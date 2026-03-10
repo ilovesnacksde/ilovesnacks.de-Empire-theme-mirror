@@ -201,6 +201,7 @@ a.product_link_cus {
 @media (max-width: 719px) {
   .site-header-main-content {
     position: relative !important;
+    overflow: visible !important;
   }
 
   .header-lang-flag--mobile {
