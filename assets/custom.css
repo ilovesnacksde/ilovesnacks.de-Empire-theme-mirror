@@ -199,18 +199,20 @@ a.product_link_cus {
   }
 }
 @media (max-width: 719px) {
+  .site-header-main-content {
+    position: relative !important;
+  }
+
   .header-lang-flag--mobile {
     display: inline-flex !important;
     align-items: center !important;
-    margin-left: 8px !important;
-    margin-right: 8px !important;
-    flex: 0 0 auto !important;
-  }
-
-  .site-header-main-content {
-    display: flex !important;
-    align-items: center !important;
-    flex-wrap: nowrap !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: -6px !important;
+    transform: translateY(-50%) !important;
+    z-index: 30 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .site-header-actions__language {
