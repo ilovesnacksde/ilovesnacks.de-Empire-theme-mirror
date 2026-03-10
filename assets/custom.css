@@ -201,6 +201,7 @@ a.product_link_cus {
 @media (max-width: 719px) {
 .site-header-logo {
   position: relative !important;
+  overflow: visible !important;
 }
 
 .site-header-main-content {
@@ -212,11 +213,10 @@ a.product_link_cus {
   align-items: center !important;
   position: absolute !important;
   top: 50% !important;
-  left: calc(100% + 8px) !important;
-  right: auto !important;
+  left: 100% !important;
+  margin-left: 8px !important;
   transform: translateY(-50%) !important;
-  z-index: 30 !important;
-  margin: 0 !important;
+  z-index: 999 !important;
   padding: 0 !important;
 }
 
